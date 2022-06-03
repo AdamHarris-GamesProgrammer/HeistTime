@@ -1,0 +1,14 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\ue\\projects\\attempt3\\heisttime\\source\\heisttime\\heisttime.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\ue\\projects\\attempt3\\heisttime\\intermediate\\build\\win64\\heisttimeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\ue\\projects\\attempt3\\heisttime\\intermediate\\build\\win64\\unrealeditor\\development\\heisttime\\definitions.heisttime.h",
+            "e:\\ue\\projects\\attempt3\\heisttime\\source\\heisttime\\heisttime.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
