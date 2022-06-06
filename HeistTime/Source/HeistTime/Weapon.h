@@ -29,6 +29,8 @@ public:
 
 	void PullTrigger();
 
+	void Reload();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -37,7 +39,15 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(BlueprintCallable)
+	int GetCurrentAmmo() const {
+		return _currentAmmo;
+	}
 
+	UFUNCTION(BlueprintCallable)
+	int GetBulletsInClip() const {
+		return _bulletsInClip;
+	}
 private:
 	UPROPERTY(VisibleAnywhere)
 	class USceneComponent* pRootComponent;
@@ -66,6 +76,14 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Weapon Stats")
 	int _bulletIterations = 10;
 
+	UPROPERTY(EditAnywhere, Category = "Weapon Stats")
+	int _totalAmmo = 180;
+
+	UPROPERTY(EditAnywhere, Category = "Weapon Stats")
+	int _clipSize = 6;
+
+	int _currentAmmo;
+	int _bulletsInClip;
 
 	float _rangeIncrement;
 

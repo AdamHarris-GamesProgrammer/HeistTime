@@ -29,6 +29,9 @@ void AWeapon::BeginPlay()
 	params.AddIgnoredActor(GetOwner());
 
 	_rangeIncrement = _range / _bulletIterations;
+
+	_currentAmmo = _totalAmmo;
+	Reload();
 }
 
 // Called every frame
@@ -73,6 +76,8 @@ void AWeapon::Tick(float DeltaTime)
 }
 
 void AWeapon::PullTrigger() {
+	if (_bulletsInClip == 0) return;
+
 
 	APawn* owner = Cast<APawn>(GetOwner());
 	if (owner == nullptr) return;
@@ -94,6 +99,9 @@ void AWeapon::PullTrigger() {
 	
 	_pBullets.Add(b);
 
+	_bulletsInClip--;
+	UE_LOG(LogTemp, Warning, TEXT("Bullets Left: %i"), _bulletsInClip);
+
 	if (pMuzzleFlash != nullptr) {
 		UGameplayStatics::SpawnEmitterAttached(pMuzzleFlash, pMeshComponent, "MuzzleFlashSocket");
 	}
@@ -101,6 +109,22 @@ void AWeapon::PullTrigger() {
 	if (pSfx != nullptr) {
 		UGameplayStatics::PlaySoundAtLocation(this, pSfx, location);
 	}
+}
+
+void AWeapon::Reload()
+{
+	if (_currentAmmo == 0) return;
+
+	int remainder = _clipSize - _bulletsInClip;
+
+	if (remainder > _currentAmmo - remainder) {
+		remainder = _currentAmmo;
+	}
+
+	_bulletsInClip = _clipSize;
+	_currentAmmo -= remainder;
+
+	UE_LOG(LogTemp, Warning, TEXT("Total Ammo Left: %i"), _currentAmmo);
 }
 
 bool Bullet::Check(UWorld* world, FCollisionQueryParams* params, FHitResult result)

@@ -33,6 +33,11 @@ class AHeistTimeCharacter : public ACharacter
 public:
 	AHeistTimeCharacter();
 
+	UFUNCTION(BlueprintCallable)
+	AWeapon* GetCurrentWeapon() const {
+		return _weapon;
+	}
+
 protected:
 	virtual void BeginPlay();
 
@@ -48,6 +53,9 @@ protected:
 	
 	/** Fires a projectile. */
 	void OnPrimaryAction();
+
+	//Reloads current Gun
+	void OnReloadAction();
 
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);

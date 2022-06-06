@@ -14,10 +14,10 @@ void EmptyLinkFunctionForGeneratedCodeHeistTimeCharacter() {}
 	HEISTTIME_API UClass* Z_Construct_UClass_AHeistTimeCharacter_NoRegister();
 	HEISTTIME_API UClass* Z_Construct_UClass_AHeistTimeCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	HEISTTIME_API UClass* Z_Construct_UClass_AWeapon_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	HEISTTIME_API UClass* Z_Construct_UClass_AWeapon_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_HeistTime_OnUseItem__DelegateSignature_Statics
 	{
@@ -43,8 +43,52 @@ void EmptyLinkFunctionForGeneratedCodeHeistTimeCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	DEFINE_FUNCTION(AHeistTimeCharacter::execGetCurrentWeapon)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(AWeapon**)Z_Param__Result=P_THIS->GetCurrentWeapon();
+		P_NATIVE_END;
+	}
 	void AHeistTimeCharacter::StaticRegisterNativesAHeistTimeCharacter()
 	{
+		UClass* Class = AHeistTimeCharacter::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "GetCurrentWeapon", &AHeistTimeCharacter::execGetCurrentWeapon },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon_Statics
+	{
+		struct HeistTimeCharacter_eventGetCurrentWeapon_Parms
+		{
+			AWeapon* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(HeistTimeCharacter_eventGetCurrentWeapon_Parms, ReturnValue), Z_Construct_UClass_AWeapon_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "HeistTimeCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AHeistTimeCharacter, nullptr, "GetCurrentWeapon", nullptr, nullptr, sizeof(Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon_Statics::HeistTimeCharacter_eventGetCurrentWeapon_Parms), Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AHeistTimeCharacter);
 	UClass* Z_Construct_UClass_AHeistTimeCharacter_NoRegister()
@@ -54,6 +98,7 @@ void EmptyLinkFunctionForGeneratedCodeHeistTimeCharacter() {}
 	struct Z_Construct_UClass_AHeistTimeCharacter_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -88,6 +133,9 @@ void EmptyLinkFunctionForGeneratedCodeHeistTimeCharacter() {}
 	UObject* (*const Z_Construct_UClass_AHeistTimeCharacter_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ACharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_HeistTime,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AHeistTimeCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AHeistTimeCharacter_GetCurrentWeapon, "GetCurrentWeapon" }, // 705091109
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHeistTimeCharacter_Statics::Class_MetaDataParams[] = {
@@ -164,11 +212,11 @@ void EmptyLinkFunctionForGeneratedCodeHeistTimeCharacter() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_AHeistTimeCharacter_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AHeistTimeCharacter_Statics::PropPointers),
 		0,
 		0x008000A4u,
@@ -192,9 +240,9 @@ void EmptyLinkFunctionForGeneratedCodeHeistTimeCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AHeistTimeCharacter, AHeistTimeCharacter::StaticClass, TEXT("AHeistTimeCharacter"), &Z_Registration_Info_UClass_AHeistTimeCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHeistTimeCharacter), 3497114952U) },
+		{ Z_Construct_UClass_AHeistTimeCharacter, AHeistTimeCharacter::StaticClass, TEXT("AHeistTimeCharacter"), &Z_Registration_Info_UClass_AHeistTimeCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHeistTimeCharacter), 1164602682U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_3004316909(TEXT("/Script/HeistTime"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_1028001707(TEXT("/Script/HeistTime"),
 		Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

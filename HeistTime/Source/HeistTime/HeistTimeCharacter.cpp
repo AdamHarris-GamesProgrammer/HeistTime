@@ -60,6 +60,7 @@ void AHeistTimeCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 
 	// Bind fire event
 	PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &AHeistTimeCharacter::OnPrimaryAction);
+	PlayerInputComponent->BindAction("ReloadAction", IE_Pressed, this, &AHeistTimeCharacter::OnReloadAction);
 
 	// Bind movement events
 	PlayerInputComponent->BindAxis("Move Forward / Backward", this, &AHeistTimeCharacter::MoveForward);
@@ -82,6 +83,13 @@ void AHeistTimeCharacter::OnPrimaryAction()
 
 	// Trigger the OnItemUsed Event
 	OnUseItem.Broadcast();
+}
+
+void AHeistTimeCharacter::OnReloadAction()
+{
+	if (_weapon != nullptr) {
+		_weapon->Reload();
+	}
 }
 
 void AHeistTimeCharacter::MoveForward(float Value)
