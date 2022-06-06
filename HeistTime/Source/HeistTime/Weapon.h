@@ -45,20 +45,29 @@ private:
 	UPROPERTY(VisibleAnywhere)
 	class USkeletalMeshComponent* pMeshComponent;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Weapon Effects")
 	class UParticleSystem* pMuzzleFlash;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Weapon Effects")
 	class UParticleSystem* pImpactEffect;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Weapon Effects")
 	class USoundBase* pSfx;
 
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditDefaultsOnly, Category = "Weapon Stats")
 	float _range = 10000.0f;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Weapon Stats")
 	float _damage = 30.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Weapon Stats")
+	float _bulletDropRate = 5.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Weapon Stats")
+	int _bulletIterations = 10;
+
+
+	float _rangeIncrement;
 
 	FCollisionQueryParams params;
 

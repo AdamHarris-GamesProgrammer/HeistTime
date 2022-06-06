@@ -60,6 +60,14 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp__damage_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp__damage;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp__bulletDropRate_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp__bulletDropRate;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp__bulletIterations_MetaData[];
+#endif
+		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp__bulletIterations;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -92,39 +100,53 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp_pMeshComponent = { "pMeshComponent", nullptr, (EPropertyFlags)0x00400000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, pMeshComponent), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp_pMeshComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp_pMeshComponent_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::NewProp_pMuzzleFlash_MetaData[] = {
-		{ "Category", "Weapon" },
+		{ "Category", "Weapon Effects" },
 		{ "ModuleRelativePath", "Weapon.h" },
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp_pMuzzleFlash = { "pMuzzleFlash", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, pMuzzleFlash), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp_pMuzzleFlash_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp_pMuzzleFlash_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::NewProp_pImpactEffect_MetaData[] = {
-		{ "Category", "Weapon" },
+		{ "Category", "Weapon Effects" },
 		{ "ModuleRelativePath", "Weapon.h" },
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp_pImpactEffect = { "pImpactEffect", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, pImpactEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp_pImpactEffect_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp_pImpactEffect_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::NewProp_pSfx_MetaData[] = {
-		{ "Category", "Weapon" },
+		{ "Category", "Weapon Effects" },
 		{ "ModuleRelativePath", "Weapon.h" },
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp_pSfx = { "pSfx", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, pSfx), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp_pSfx_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp_pSfx_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::NewProp__range_MetaData[] = {
-		{ "Category", "Weapon" },
+		{ "Category", "Weapon Stats" },
 		{ "ModuleRelativePath", "Weapon.h" },
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp__range = { "_range", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, _range), METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp__range_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp__range_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::NewProp__damage_MetaData[] = {
-		{ "Category", "Weapon" },
+		{ "Category", "Weapon Stats" },
 		{ "ModuleRelativePath", "Weapon.h" },
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp__damage = { "_damage", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, _damage), METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp__damage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp__damage_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::NewProp__bulletDropRate_MetaData[] = {
+		{ "Category", "Weapon Stats" },
+		{ "ModuleRelativePath", "Weapon.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp__bulletDropRate = { "_bulletDropRate", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, _bulletDropRate), METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp__bulletDropRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp__bulletDropRate_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::NewProp__bulletIterations_MetaData[] = {
+		{ "Category", "Weapon Stats" },
+		{ "ModuleRelativePath", "Weapon.h" },
+	};
+#endif
+	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp__bulletIterations = { "_bulletIterations", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, _bulletIterations), METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp__bulletIterations_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp__bulletIterations_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWeapon_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_pRootComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_pMeshComponent,
@@ -133,6 +155,8 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_pSfx,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp__range,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp__damage,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp__bulletDropRate,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp__bulletIterations,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AWeapon_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AWeapon>::IsAbstract,
@@ -170,9 +194,9 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_Weapon_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AWeapon, AWeapon::StaticClass, TEXT("AWeapon"), &Z_Registration_Info_UClass_AWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWeapon), 3235699558U) },
+		{ Z_Construct_UClass_AWeapon, AWeapon::StaticClass, TEXT("AWeapon"), &Z_Registration_Info_UClass_AWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWeapon), 318950377U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_Weapon_h_2389065123(TEXT("/Script/HeistTime"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_Weapon_h_1470518550(TEXT("/Script/HeistTime"),
 		Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_Weapon_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_Weapon_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

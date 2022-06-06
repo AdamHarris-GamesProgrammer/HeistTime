@@ -35,9 +35,6 @@ AHeistTimeCharacter::AHeistTimeCharacter()
 	Mesh1P->CastShadow = false;
 	Mesh1P->SetRelativeRotation(FRotator(1.9f, -19.19f, 5.2f));
 	Mesh1P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));
-
-
-
 }
 
 void AHeistTimeCharacter::BeginPlay()
@@ -64,9 +61,6 @@ void AHeistTimeCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	// Bind fire event
 	PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &AHeistTimeCharacter::OnPrimaryAction);
 
-	// Enable touchscreen input
-	EnableTouchscreenMovement(PlayerInputComponent);
-
 	// Bind movement events
 	PlayerInputComponent->BindAxis("Move Forward / Backward", this, &AHeistTimeCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("Move Right / Left", this, &AHeistTimeCharacter::MoveRight);
@@ -88,31 +82,6 @@ void AHeistTimeCharacter::OnPrimaryAction()
 
 	// Trigger the OnItemUsed Event
 	OnUseItem.Broadcast();
-}
-
-void AHeistTimeCharacter::BeginTouch(const ETouchIndex::Type FingerIndex, const FVector Location)
-{
-	if (TouchItem.bIsPressed == true)
-	{
-		return;
-	}
-	if ((FingerIndex == TouchItem.FingerIndex) && (TouchItem.bMoved == false))
-	{
-		OnPrimaryAction();
-	}
-	TouchItem.bIsPressed = true;
-	TouchItem.FingerIndex = FingerIndex;
-	TouchItem.Location = Location;
-	TouchItem.bMoved = false;
-}
-
-void AHeistTimeCharacter::EndTouch(const ETouchIndex::Type FingerIndex, const FVector Location)
-{
-	if (TouchItem.bIsPressed == false)
-	{
-		return;
-	}
-	TouchItem.bIsPressed = false;
 }
 
 void AHeistTimeCharacter::MoveForward(float Value)
@@ -143,17 +112,4 @@ void AHeistTimeCharacter::LookUpAtRate(float Rate)
 {
 	// calculate delta for this frame from the rate information
 	AddControllerPitchInput(Rate * TurnRateGamepad * GetWorld()->GetDeltaSeconds());
-}
-
-bool AHeistTimeCharacter::EnableTouchscreenMovement(class UInputComponent* PlayerInputComponent)
-{
-	if (FPlatformMisc::SupportsTouchInput() || GetDefault<UInputSettings>()->bUseMouseForTouch)
-	{
-		PlayerInputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AHeistTimeCharacter::BeginTouch);
-		PlayerInputComponent->BindTouch(EInputEvent::IE_Released, this, &AHeistTimeCharacter::EndTouch);
-
-		return true;
-	}
-	
-	return false;
 }

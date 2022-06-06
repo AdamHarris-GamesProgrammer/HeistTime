@@ -27,14 +27,14 @@ void AWeapon::BeginPlay()
 
 	params.AddIgnoredActor(this);
 	params.AddIgnoredActor(GetOwner());
-	
+
+	_rangeIncrement = _range / _bulletIterations;
 }
 
 // Called every frame
 void AWeapon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 
 	TArray<Bullet*> pBulletsToRemove;
 
@@ -75,27 +75,22 @@ void AWeapon::Tick(float DeltaTime)
 void AWeapon::PullTrigger() {
 
 	APawn* owner = Cast<APawn>(GetOwner());
-
 	if (owner == nullptr) return;
 
 
 	AController* ownerController = owner->GetController();
-
 	if (ownerController == nullptr) return;
 
 	FVector location;
 	FRotator rotation;
-
 	ownerController->GetPlayerViewPoint(location, rotation);
-
-	FVector end = location + rotation.Vector() * _range;
 
 	Bullet* b = new Bullet();
 	b->location = location;
 	b->direction = rotation.Vector();
 	b->maxRange = _range;
-	b->rangeIncrement = _range / 10.0f;
-	b->dropRate = 15.0f;
+	b->rangeIncrement = _rangeIncrement;
+	b->dropRate = _bulletDropRate;
 	
 	_pBullets.Add(b);
 
@@ -103,7 +98,7 @@ void AWeapon::PullTrigger() {
 		UGameplayStatics::SpawnEmitterAttached(pMuzzleFlash, pMeshComponent, "MuzzleFlashSocket");
 	}
 
-	if (pSfx == nullptr) {
+	if (pSfx != nullptr) {
 		UGameplayStatics::PlaySoundAtLocation(this, pSfx, location);
 	}
 }

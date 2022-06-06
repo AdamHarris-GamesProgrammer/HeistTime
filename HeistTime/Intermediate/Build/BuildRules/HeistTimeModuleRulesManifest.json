@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"E:\\UE\\Projects\\Attempt3\\HeistTime\\Source\\HeistTime\\HeistTime.Build.cs",
-		"E:\\UE\\Projects\\Attempt3\\HeistTime\\Source\\HeistTime.Target.cs",
-		"E:\\UE\\Projects\\Attempt3\\HeistTime\\Source\\HeistTimeEditor.Target.cs"
+		"E:\\UE\\Projects\\Heist\\HeistTime\\HeistTime\\Source\\HeistTime\\HeistTime.Build.cs",
+		"E:\\UE\\Projects\\Heist\\HeistTime\\HeistTime\\Source\\HeistTime.Target.cs",
+		"E:\\UE\\Projects\\Heist\\HeistTime\\HeistTime\\Source\\HeistTimeEditor.Target.cs"
 	],
 	"EngineVersion": "5.0.2"
 }

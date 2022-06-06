@@ -63,5 +63,5 @@
 /DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_IDENTIFIER=HeistTime
-/fo "E:\UE\Projects\Attempt3\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\Default.rc2.res"
+/fo "E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"

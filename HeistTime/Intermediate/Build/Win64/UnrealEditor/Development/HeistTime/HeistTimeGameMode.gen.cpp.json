@@ -1,17 +1,17 @@
 {
     "Version": "1.1",
     "Data": {
-        "Source": "e:\\ue\\projects\\attempt3\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\heisttimegamemode.gen.cpp",
+        "Source": "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\heisttimegamemode.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "e:\\ue\\projects\\attempt3\\heisttime\\intermediate\\build\\win64\\heisttimeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "PCH": "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\heisttimeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
         "Includes": [
-            "e:\\ue\\projects\\attempt3\\heisttime\\intermediate\\build\\win64\\unrealeditor\\development\\heisttime\\definitions.heisttime.h",
-            "e:\\ue\\projects\\attempt3\\heisttime\\source\\heisttime\\heisttimegamemode.h",
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\development\\heisttime\\definitions.heisttime.h",
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\source\\heisttime\\heisttimegamemode.h",
             "e:\\ue\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
             "e:\\ue\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
             "e:\\ue\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
             "e:\\ue\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
-            "e:\\ue\\projects\\attempt3\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\heisttimegamemode.generated.h"
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\heisttimegamemode.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

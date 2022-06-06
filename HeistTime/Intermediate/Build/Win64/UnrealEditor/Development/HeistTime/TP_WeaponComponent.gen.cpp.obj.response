@@ -1,4 +1,4 @@
-E:\UE\Projects\Attempt3\HeistTime\Intermediate\Build\Win64\UnrealEditor\Inc\HeistTime\TP_WeaponComponent.gen.cpp
+E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Inc\HeistTime\TP_WeaponComponent.gen.cpp
 /I .
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine
 /I Runtime
@@ -251,8 +251,8 @@ E:\UE\Projects\Attempt3\HeistTime\Intermediate\Build\Win64\UnrealEditor\Inc\Heis
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController
 /I Developer\AnimationDataController\Public
-/I E:\UE\Projects\Attempt3\HeistTime\Intermediate\Build\Win64\UnrealEditor\Inc\HeistTime
-/I E:\UE\Projects\Attempt3\HeistTime\Source
+/I E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Inc\HeistTime
+/I E:\UE\Projects\Heist\HeistTime\HeistTime\Source
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\MRMesh
@@ -277,12 +277,12 @@ E:\UE\Projects\Attempt3\HeistTime\Intermediate\Build\Win64\UnrealEditor\Inc\Heis
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"E:\UE\Projects\Attempt3\HeistTime\Intermediate\Build\Win64\HeistTimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"E:\UE\Projects\Attempt3\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\Definitions.HeistTime.h"
-/Yu"E:\UE\Projects\Attempt3\HeistTime\Intermediate\Build\Win64\HeistTimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"E:\UE\Projects\Attempt3\HeistTime\Intermediate\Build\Win64\HeistTimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"E:\UE\Projects\Attempt3\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\TP_WeaponComponent.gen.cpp.obj"
-/sourceDependencies E:\UE\Projects\Attempt3\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\TP_WeaponComponent.gen.cpp.json
+/FI"E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\HeistTimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/FI"E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\Definitions.HeistTime.h"
+/Yu"E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\HeistTimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\HeistTimeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/Fo"E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\TP_WeaponComponent.gen.cpp.obj"
+/sourceDependencies E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\TP_WeaponComponent.gen.cpp.json
 /Zc:inline
 /nologo
 /Oi
