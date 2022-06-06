@@ -1,27 +1,17 @@
 ﻿  Using bundled DotNet SDK
   Log file: C:\Users\Adam\AppData\Local\UnrealBuildTool\Log.txt
   Using 'git status' to determine working set for adaptive non-unity build (E:\UE\Projects\Heist\HeistTime).
-  Invalidating makefile for HeistTimeEditor (working set of source files changed)
-  Parsing headers for HeistTimeEditor
-    Running UnrealHeaderTool "E:\UE\Projects\Heist\HeistTime\HeistTime\HeistTime.uproject" "E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\HeistTimeEditor\Development\HeistTimeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Adam\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for HeistTimeEditor in 2.4778157 seconds
   Building HeistTimeEditor...
   Using Visual Studio 2019 14.29.30141 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive Build] Excluded from HeistTime unity file: HeistTimeCharacter.cpp, Weapon.cpp
+  [Adaptive Build] Excluded from HeistTime unity file: HeistTimeCharacter.cpp, PickupBase.cpp, TP_PickUpComponent.cpp, Weapon.cpp
   Determining max actions to execute in parallel (4 physical cores, 8 logical cores)
     Executing up to 4 processes, one per physical core
-  Building 10 actions with 4 processes...
-  [1/10] Compile HeistTime.init.gen.cpp
-  [2/10] Compile HeistTimeCharacter.gen.cpp
-  [3/10] Compile TP_PickUpComponent.cpp
-  [4/10] Compile HeistTimeCharacter.cpp
-  [5/10] Compile TP_PickUpComponent.gen.cpp
-  [6/10] Compile HeistTimeGameMode.cpp
-  [7/10] Compile TP_WeaponComponent.cpp
-  [8/10] Link UnrealEditor-HeistTime-0041.lib
-     Creating library E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0041.lib and object E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0041.exp
-  [9/10] Link UnrealEditor-HeistTime-0041.dll
-     Creating library E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0041.suppressed.lib and object E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0041.suppressed.exp
-  [10/10] WriteMetadata HeistTimeEditor.target
-  Total time in Parallel executor: 3.28 seconds
-  Total execution time: 7.53 seconds
+  Building 4 actions with 4 processes...
+  [1/4] Compile PickupBase.cpp
+  [2/4] Link UnrealEditor-HeistTime-0058.lib
+     Creating library E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0058.lib and object E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0058.exp
+  [3/4] Link UnrealEditor-HeistTime-0058.dll
+     Creating library E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0058.suppressed.lib and object E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0058.suppressed.exp
+  [4/4] WriteMetadata HeistTimeEditor.target
+  Total time in Parallel executor: 1.49 seconds
+  Total execution time: 2.31 seconds

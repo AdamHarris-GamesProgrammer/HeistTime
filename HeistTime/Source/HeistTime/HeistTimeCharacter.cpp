@@ -61,6 +61,7 @@ void AHeistTimeCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	// Bind fire event
 	PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &AHeistTimeCharacter::OnPrimaryAction);
 	PlayerInputComponent->BindAction("ReloadAction", IE_Pressed, this, &AHeistTimeCharacter::OnReloadAction);
+	PlayerInputComponent->BindAction("InteractAction", IE_Pressed, this, &AHeistTimeCharacter::OnInteractionAction);
 
 	// Bind movement events
 	PlayerInputComponent->BindAxis("Move Forward / Backward", this, &AHeistTimeCharacter::MoveForward);
@@ -89,6 +90,12 @@ void AHeistTimeCharacter::OnReloadAction()
 {
 	if (_weapon != nullptr) {
 		_weapon->Reload();
+	}
+}
+
+void AHeistTimeCharacter::OnInteractionAction() {
+	if (_pNearbyPickup != nullptr) {
+		_pNearbyPickup->Pickup(this);
 	}
 }
 

@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "HeistTime",
-			"Path": "E:\\UE\\Projects\\Attempt3\\HeistTime\\Source\\HeistTime.Target.cs",
+			"Path": "E:\\UE\\Projects\\Heist\\HeistTime\\HeistTime\\Source\\HeistTime.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "HeistTimeEditor",
-			"Path": "E:\\UE\\Projects\\Attempt3\\HeistTime\\Source\\HeistTimeEditor.Target.cs",
+			"Path": "E:\\UE\\Projects\\Heist\\HeistTime\\HeistTime\\Source\\HeistTimeEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

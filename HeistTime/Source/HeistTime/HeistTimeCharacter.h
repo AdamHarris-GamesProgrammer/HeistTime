@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "PickupBase.h"
 #include "HeistTimeCharacter.generated.h"
 
 class UInputComponent;
@@ -49,6 +50,20 @@ public:
 	/** Delegate to whom anyone can subscribe to receive this event */
 	UPROPERTY(BlueprintAssignable, Category = "Interaction")
 	FOnUseItem OnUseItem;
+
+
+
+
+	void SetNearbyPickup(APickupBase* pickup) {
+		UE_LOG(LogTemp, Warning, TEXT("Item nearby or not nearby"));
+		_pNearbyPickup = pickup;
+	}
+
+	APickupBase* GetNearbyPickup() const {
+		return _pNearbyPickup;
+	}
+
+
 protected:
 	
 	/** Fires a projectile. */
@@ -56,6 +71,9 @@ protected:
 
 	//Reloads current Gun
 	void OnReloadAction();
+
+	
+	void OnInteractionAction();
 
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
@@ -93,5 +111,7 @@ private:
 	
 	UPROPERTY()
 	class AWeapon* _weapon;
+
+	APickupBase* _pNearbyPickup;
 };
 

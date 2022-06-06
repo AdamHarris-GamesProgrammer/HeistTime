@@ -11,6 +11,7 @@
     <None Include="..\..\Source\HeistTimeEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\README.md" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -63,6 +64,12 @@
       <Filter>Source\HeistTime</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\HeistTime\HeistTimeProjectile.h">
+      <Filter>Source\HeistTime</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HeistTime\PickupBase.cpp">
+      <Filter>Source\HeistTime</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HeistTime\PickupBase.h">
       <Filter>Source\HeistTime</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\HeistTime\TP_PickUpComponent.cpp">

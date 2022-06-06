@@ -78,7 +78,6 @@ void AWeapon::Tick(float DeltaTime)
 void AWeapon::PullTrigger() {
 	if (_bulletsInClip == 0) return;
 
-
 	APawn* owner = Cast<APawn>(GetOwner());
 	if (owner == nullptr) return;
 
