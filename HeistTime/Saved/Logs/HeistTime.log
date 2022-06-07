@@ -1234,3 +1234,520 @@ LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
 [2022.06.07-13.42.28:094][494]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2022.06.07-13.42.28:125][494]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
 [2022.06.07-13.42.28:165][495]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2022.06.07-13.52.39:144][669]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2022.06.07-13.52.40:515][669]LogSlate: Window 'Pick Parent Class' being destroyed
+[2022.06.07-13.52.40:521][669]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2022.06.07-13.52.40:525][669]LogContentBrowser: Creating deferred item: NewBlueprint
+[2022.06.07-13.52.40:535][670]LogContentBrowser: Renaming the item being created (Deferred Item: NewBlueprint).
+[2022.06.07-13.52.45:649][256]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_ExitPoint
+[2022.06.07-13.52.45:659][256]LogContentBrowser: End creating deferred item NewBlueprint
+[2022.06.07-13.52.50:742][832]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Blueprints/BP_ExitPoint.BP_ExitPoint_C
+[2022.06.07-13.52.50:742][832]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Blueprints/BP_ExitPoint.BP_ExitPoint_C
+[2022.06.07-13.52.50:742][832]LogActorFactory: Actor Factory spawned Blueprint /Game/Blueprints/BP_ExitPoint.BP_ExitPoint as actor: BP_ExitPoint_C /Game/FirstPerson/Maps/TestMap.TestMap:PersistentLevel.BP_ExitPoint_C_0
+[2022.06.07-13.52.50:743][832]LogActorFactory: Actor Factory spawned Blueprint /Game/Blueprints/BP_ExitPoint.BP_ExitPoint as actor: BP_ExitPoint_C /Game/FirstPerson/Maps/TestMap.TestMap:PersistentLevel.BP_ExitPoint_C_0
+[2022.06.07-13.52.51:275][884]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Blueprints/BP_ExitPoint.BP_ExitPoint_C
+[2022.06.07-13.52.51:275][884]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Blueprints/BP_ExitPoint.BP_ExitPoint_C
+[2022.06.07-13.52.51:276][884]LogActorFactory: Actor Factory spawned Blueprint /Game/Blueprints/BP_ExitPoint.BP_ExitPoint as actor: BP_ExitPoint_C /Game/FirstPerson/Maps/TestMap.TestMap:PersistentLevel.BP_ExitPoint_C_1
+[2022.06.07-13.52.51:276][884]LogActorFactory: Actor Factory spawned Blueprint /Game/Blueprints/BP_ExitPoint.BP_ExitPoint as actor: BP_ExitPoint_C /Game/FirstPerson/Maps/TestMap.TestMap:PersistentLevel.BP_ExitPoint_C_1
+[2022.06.07-13.52.53:140][ 90]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_ExitPoint.BP_ExitPoint
+[2022.06.07-13.52.53:141][ 90]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.06.07-13.52.53:603][ 90]LogViewport: Scene viewport resized to 1523x944, mode Windowed.
+[2022.06.07-13.53.02:721][124]LogSlate: Took 0.002763 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.06.07-13.53.47:063][ 50]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_ExitPoint" FILE="../../../../../Projects/Heist/HeistTime/HeistTime/Content/Blueprints/BP_ExitPoint.uasset" SILENT=true
+[2022.06.07-13.53.47:066][ 50]LogSavePackage: Moving output files for package: /Game/Blueprints/BP_ExitPoint
+[2022.06.07-13.53.47:066][ 50]LogSavePackage: Moving '../../../../../Projects/Heist/HeistTime/HeistTime/Saved/BP_ExitPoint1DB6B11E4D86F4DC243A4B9200ECD7FA.tmp' to '../../../../../Projects/Heist/HeistTime/HeistTime/Content/Blueprints/BP_ExitPoint.uasset'
+[2022.06.07-13.53.47:079][ 50]AssetCheck: New page: Asset Save: BP_ExitPoint
+[2022.06.07-13.53.47:079][ 50]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_ExitPoint.BP_ExitPoint
+[2022.06.07-13.57.51:643][996]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_ExitPoint" FILE="../../../../../Projects/Heist/HeistTime/HeistTime/Content/Blueprints/BP_ExitPoint.uasset" SILENT=true
+[2022.06.07-13.57.51:647][996]LogSavePackage: Moving output files for package: /Game/Blueprints/BP_ExitPoint
+[2022.06.07-13.57.51:647][996]LogSavePackage: Moving '../../../../../Projects/Heist/HeistTime/HeistTime/Saved/BP_ExitPoint1C8557AB4374BE7AA0FB0F916901D9AA.tmp' to '../../../../../Projects/Heist/HeistTime/HeistTime/Content/Blueprints/BP_ExitPoint.uasset'
+[2022.06.07-13.57.51:662][996]AssetCheck: New page: Asset Save: BP_ExitPoint
+[2022.06.07-13.57.51:662][996]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_ExitPoint.BP_ExitPoint
+[2022.06.07-13.57.56:288][499]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPerson/Maps/TestMap" FILE="../../../../../Projects/Heist/HeistTime/HeistTime/Content/FirstPerson/Maps/TestMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.06.07-13.57.56:357][499]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2022.06.07-13.57.56:370][499]LogSavePackage: Moving output files for package: /Game/FirstPerson/Maps/TestMap
+[2022.06.07-13.57.56:370][499]LogSavePackage: Moving '../../../../../Projects/Heist/HeistTime/HeistTime/Saved/TestMap22B2CC2049D9F2E82544148B9F407DED.tmp' to '../../../../../Projects/Heist/HeistTime/HeistTime/Content/FirstPerson/Maps/TestMap.umap'
+[2022.06.07-13.57.56:379][499]LogFileHelpers: No new changes to save!
+[2022.06.07-13.57.56:391][499]AssetCheck: New page: Asset Save: TestMap
+[2022.06.07-13.57.56:391][499]LogContentValidation: Display: Validating World /Game/FirstPerson/Maps/TestMap.TestMap
+[2022.06.07-13.58.03:228][244]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPerson/Maps/TestMap" FILE="../../../../../Projects/Heist/HeistTime/HeistTime/Content/FirstPerson/Maps/TestMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.06.07-13.58.03:280][244]LogUObjectHash: Compacting FUObjectHashTables data took   1.49ms
+[2022.06.07-13.58.03:299][244]LogSavePackage: Moving output files for package: /Game/FirstPerson/Maps/TestMap
+[2022.06.07-13.58.03:299][244]LogSavePackage: Moving '../../../../../Projects/Heist/HeistTime/HeistTime/Saved/TestMap35A028B44CB117F0CAFD11B3692B83C5.tmp' to '../../../../../Projects/Heist/HeistTime/HeistTime/Content/FirstPerson/Maps/TestMap.umap'
+[2022.06.07-13.58.03:307][244]LogFileHelpers: No new changes to save!
+[2022.06.07-13.58.03:319][244]AssetCheck: New page: Asset Save: TestMap
+[2022.06.07-13.58.03:319][244]LogContentValidation: Display: Validating World /Game/FirstPerson/Maps/TestMap.TestMap
+[2022.06.07-14.00.54:938][ 63]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2022.06.07-14.00.57:044][ 63]LogSlate: Window 'Delete Assets' being destroyed
+[2022.06.07-14.00.57:149][ 63]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2022.06.07-14.00.57:149][ 63]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.06.07-14.00.57:194][ 63]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/Blueprints/BP_ExitPoint.BP_ExitPoint
+	Asset Type: Blueprint
+[2022.06.07-14.00.57:550][ 63]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2022.06.07-14.00.57:637][ 63]LogUObjectHash: Compacting FUObjectHashTables data took   1.25ms
+[2022.06.07-14.00.57:672][ 63]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2022.06.07-14.00.57:700][ 63]LogUObjectHash: Compacting FUObjectHashTables data took   0.44ms
+[2022.06.07-14.01.12:522][623]Running E:/UE/UE4/UE_5.0/Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.exe  -projectfiles -project="E:/UE/Projects/Heist/HeistTime/HeistTime/HeistTime.uproject" -game -rocket -progress
+[2022.06.07-14.01.13:642][623]Log file: C:\Users\Adam\AppData\Local\UnrealBuildTool\Log_GPF.txt
+[2022.06.07-14.01.13:642][623]
+[2022.06.07-14.01.13:642][623]Some Platforms were skipped due to invalid SDK setup: IOS, Android, Linux, LinuxArm64.
+[2022.06.07-14.01.13:642][623]See the log file for detailed information
+[2022.06.07-14.01.13:642][623]
+[2022.06.07-14.01.13:642][623]Discovering modules, targets and source code for project...
+[2022.06.07-14.01.16:648][623]Binding IntelliSense data...
+[2022.06.07-14.01.17:250][623]Binding IntelliSense data... 100%
+[2022.06.07-14.01.17:250][623]Writing project files...
+[2022.06.07-14.01.19:055][623]Writing project files... 100%
+[2022.06.07-14.01.19:168][623]Candidate modules for hot reload:
+[2022.06.07-14.01.19:168][623]  HeistTime
+[2022.06.07-14.01.19:172][623]Launching UnrealBuildTool... [E:/UE/UE4/UE_5.0/Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.exe  -ModuleWithSuffix=HeistTime,8583 HeistTimeEditor Win64 Development -Project="E:/UE/Projects/Heist/HeistTime/HeistTime/HeistTime.uproject" "E:/UE/Projects/Heist/HeistTime/HeistTime/HeistTime.uproject"  -IgnoreJunk]
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: New page: Compilation - 7 Jun 2022, 16:01:28
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: Log file: C:\Users\Adam\AppData\Local\UnrealBuildTool\Log.txt
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\UE\Projects\Heist\HeistTime).
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: Creating makefile for HeistTimeEditor (no existing makefile)
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: Parsing headers for HeistTimeEditor
+[2022.06.07-14.01.28:561][623]CompilerResultsLog:   Running UnrealHeaderTool "E:\UE\Projects\Heist\HeistTime\HeistTime\HeistTime.uproject" "E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\HeistTimeEditor\Development\HeistTimeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Adam\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: Reflection code generated for HeistTimeEditor in 5.7048338 seconds
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: Building HeistTimeEditor...
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: Using Visual Studio 2019 14.29.30141 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: [Adaptive Build] Excluded from HeistTime unity file: ExitPoint.cpp
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: Determining max actions to execute in parallel (4 physical cores, 8 logical cores)
+[2022.06.07-14.01.28:561][623]CompilerResultsLog:   Executing up to 4 processes, one per physical core
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: Building 6 actions with 4 processes...
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: [1/6] Compile ExitPoint.cpp
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: [2/6] Compile HeistTime.init.gen.cpp
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: [3/6] Compile ExitPoint.gen.cpp
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: [4/6] Link UnrealEditor-HeistTime-8583.lib
+[2022.06.07-14.01.28:561][623]CompilerResultsLog:    Creating library E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-8583.lib and object E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-8583.exp
+[2022.06.07-14.01.28:561][623]CompilerResultsLog: [5/6] Link UnrealEditor-HeistTime-8583.dll
+[2022.06.07-14.01.28:561][623]CompilerResultsLog:    Creating library E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-8583.suppressed.lib and object E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-8583.suppressed.exp
+[2022.06.07-14.01.28:562][623]CompilerResultsLog: [6/6] WriteMetadata HeistTimeEditor.target
+[2022.06.07-14.01.28:562][623]CompilerResultsLog: Total time in Parallel executor: 1.65 seconds
+[2022.06.07-14.01.28:562][623]CompilerResultsLog: Total execution time: 9.31 seconds
+[2022.06.07-14.01.28:562][623]LogMainFrame: MainFrame: Module compiling took 9.402 seconds
+[2022.06.07-14.01.28:585][623]LogClass: /Script/HeistTime Reload.
+[2022.06.07-14.01.28:591][623]LogClass: Could not find existing class ExitPoint in package /Script/HeistTime for reload, assuming new or modified class
+[2022.06.07-14.01.28:758][623]Display: HotReload took  9.6s.
+[2022.06.07-14.01.28:758][623]Display: Reload/Re-instancing Complete: 1 package changed, 1 class new, 8 classes unchanged, 1 enum unchanged, 16 functions remapped
+[2022.06.07-14.01.28:771][623]Warning: HotReload operation took  9.6s.
+[2022.06.07-14.01.28:920][623]LogSlate: Window 'Add C++ Class' being destroyed
+[2022.06.07-14.01.29:406][625]LogHotReload: New module detected: UnrealEditor-HeistTime-8583.dll
+[2022.06.07-14.01.29:521][626]LogHotReload: Starting Hot-Reload from IDE
+[2022.06.07-14.01.29:642][626]Display: HotReload took  0.1s.
+[2022.06.07-14.01.29:642][626]Display: Reload/Re-instancing Complete: No object changes detected
+[2022.06.07-14.08.03:984][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2022.06.07-14.08.03:999][  0]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/FirstPerson/Maps/TestMap_Auto2
+[2022.06.07-14.08.04:000][  0]LogSavePackage: Moving '../../../../../Projects/Heist/HeistTime/HeistTime/Saved/TestMap_Auto2273C57B044F0DEA109BEE49165E5CFE1.tmp' to '../../../../../Projects/Heist/HeistTime/HeistTime/Saved/Autosaves/Game/FirstPerson/Maps/TestMap_Auto2.umap'
+[2022.06.07-14.08.04:004][  0]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/FirstPerson/Maps/TestMap' took 0.134
+[2022.06.07-14.08.04:004][  0]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.134
+[2022.06.07-14.09.15:110][212]LogHotReload: New module detected: UnrealEditor-HeistTime-0117.dll
+[2022.06.07-14.09.16:126][216]LogHotReload: Starting Hot-Reload from IDE
+[2022.06.07-14.09.16:202][216]LogClass: /Script/HeistTime Reload.
+[2022.06.07-14.09.16:205][216]LogClass: ExitPoint Reload.
+[2022.06.07-14.09.16:209][216]LogClass: Could not find existing class ExitPoint in package /Script/HeistTime for reload, assuming new or modified class
+[2022.06.07-14.09.16:209][216]LogClass: Function OnSphereBeginOverlap is new or belongs to a modified class.
+[2022.06.07-14.09.16:209][216]LogClass: Function OnSphereEndOverlap is new or belongs to a modified class.
+[2022.06.07-14.09.16:232][216]Re-instancing ExitPoint after reload.
+[2022.06.07-14.09.16:456][216]Display: HotReload took  0.3s.
+[2022.06.07-14.09.16:456][216]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 8 classes unchanged, 1 enum unchanged, 16 functions remapped
+[2022.06.07-14.14.24:866][133]LogHotReload: New module detected: UnrealEditor-HeistTime-0119.dll
+[2022.06.07-14.14.25:542][136]LogHotReload: Starting Hot-Reload from IDE
+[2022.06.07-14.14.25:626][136]LogClass: /Script/HeistTime Reload.
+[2022.06.07-14.14.25:629][136]LogClass: ExitPoint Reload.
+[2022.06.07-14.14.25:635][136]LogClass: Could not find existing class ExitPoint in package /Script/HeistTime for reload, assuming new or modified class
+[2022.06.07-14.14.25:635][136]LogClass: Function OnSphereBeginOverlap is new or belongs to a modified class.
+[2022.06.07-14.14.25:635][136]LogClass: Function OnSphereEndOverlap is new or belongs to a modified class.
+[2022.06.07-14.14.25:663][136]Re-instancing ExitPoint after reload.
+[2022.06.07-14.14.25:922][136]Display: HotReload took  0.4s.
+[2022.06.07-14.14.25:922][136]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 8 classes unchanged, 1 enum unchanged, 16 functions remapped
+[2022.06.07-14.15.39:707][355]LogHotReload: New module detected: UnrealEditor-HeistTime-0121.dll
+[2022.06.07-14.15.40:722][359]LogHotReload: Starting Hot-Reload from IDE
+[2022.06.07-14.15.41:100][359]Display: HotReload took  0.4s.
+[2022.06.07-14.15.41:100][359]Display: Reload/Re-instancing Complete: 1 package changed, 9 classes unchanged, 1 enum unchanged, 18 functions remapped
+[2022.06.07-14.15.45:807][695]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.06.07-14.15.45:813][695]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.06.07-14.15.45:813][695]PIE: New page: PIE session: TestMap (7 Jun 2022, 16:15:45)
+[2022.06.07-14.15.45:852][695]LogPlayLevel: Creating play world package: /Game/FirstPerson/Maps/UEDPIE_0_TestMap
+[2022.06.07-14.15.45:863][695]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011456s)
+[2022.06.07-14.15.45:863][695]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPerson/Maps/TestMap.TestMap to /Game/FirstPerson/Maps/UEDPIE_0_TestMap.TestMap (0.011559s)
+[2022.06.07-14.15.45:863][695]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.06.07-14.15.45:864][695]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.06.07-14.15.45:864][695]LogAIModule: Creating AISystem for world TestMap
+[2022.06.07-14.15.45:864][695]LogPlayLevel: PIE: World Init took: (0.000717s)
+[2022.06.07-14.15.46:035][695]LogUObjectHash: Compacting FUObjectHashTables data took   3.65ms
+[2022.06.07-14.15.46:037][695]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2022.06.07-14.15.46:037][695]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.06.07-14.15.46:037][695]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.06.07-14.15.46:037][695]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.06.07-14.15.46:037][695]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.06.07-14.15.46:037][695]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.06.07-14.15.46:037][695]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.06.07-14.15.46:037][695]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.06.07-14.15.46:037][695]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.06.07-14.15.46:037][695]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.06.07-14.15.46:037][695]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.06.07-14.15.46:037][695]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.06.07-14.15.46:064][695]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.06.07-14.15.46:234][695]LogAudioMixer: Display: Using Audio Hardware Device Headset Earphone (CORSAIR VOID ELITE USB Gaming Headset)
+[2022.06.07-14.15.46:234][695]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.06.07-14.15.46:234][695]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.06.07-14.15.46:234][695]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.06.07-14.15.46:234][695]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=9
+[2022.06.07-14.15.46:234][695]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=9
+[2022.06.07-14.15.46:236][695]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=9
+[2022.06.07-14.15.46:236][695]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=9
+[2022.06.07-14.15.46:236][695]LogInit: FAudioDevice initialized.
+[2022.06.07-14.15.46:236][695]LogAudio: Display: Audio Device (ID: 9) registered with world 'TestMap'.
+[2022.06.07-14.15.46:249][695]LogLoad: Game class is 'BP_HeistTimeGM_C'
+[2022.06.07-14.15.46:251][695]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2022.06.07-15.15.46
+[2022.06.07-14.15.46:252][695]LogWorld: Bringing up level for play took: 0.002846
+[2022.06.07-14.15.46:253][695]LogOnline: OSS: Created online subsystem instance for: :Context_19
+[2022.06.07-14.15.46:255][695]LogTemp: Warning: Total Ammo Left: 84
+[2022.06.07-14.15.46:255][695]LogTemp: Warning: Total Ammo Left: 114
+[2022.06.07-14.15.46:255][695]PIE: Server logged in
+[2022.06.07-14.15.46:256][695]PIE: Play in editor total start time 0.443 seconds.
+[2022.06.07-14.15.46:687][718]LogTemp: Warning: Bullets Left: 5
+[2022.06.07-14.15.46:688][718]LogTemp: Warning: Start: X=860.440 Y=850.000 Z=162.337 End: X=1860.440 Y=850.000 Z=113.287
+[2022.06.07-14.15.46:688][718]LogTemp: Warning: Hit something
+[2022.06.07-14.15.47:755][844]LogTemp: Warning: Bullets Left: 4
+[2022.06.07-14.15.47:755][844]LogTemp: Warning: Start: X=977.815 Y=843.192 Z=162.337 End: X=1948.630 Y=633.250 Z=-2.654
+[2022.06.07-14.15.47:755][844]LogTemp: Warning: Hit something
+[2022.06.07-14.15.48:024][876]LogTemp: Warning: Bullets Left: 3
+[2022.06.07-14.15.48:024][876]LogTemp: Warning: Start: X=1118.718 Y=810.046 Z=162.337 End: X=2118.017 Y=824.614 Z=78.805
+[2022.06.07-14.15.48:025][876]LogTemp: Warning: Hit something
+[2022.06.07-14.15.48:259][904]LogTemp: Warning: Bullets Left: 2
+[2022.06.07-14.15.48:259][904]LogTemp: Warning: Start: X=1160.128 Y=779.777 Z=162.337 End: X=2140.303 Y=977.376 Z=98.731
+[2022.06.07-14.15.48:259][904]LogTemp: Warning: Hit something
+[2022.06.07-14.15.48:449][927]LogTemp: Warning: Bullets Left: 1
+[2022.06.07-14.15.48:450][927]LogTemp: Warning: Start: X=1204.107 Y=671.662 Z=162.337 End: X=1882.706 Y=1406.169 Z=115.291
+[2022.06.07-14.15.48:457][928]LogTemp: Warning: Start: X=1882.706 Y=1406.169 Z=115.291 End: X=2561.304 Y=2140.675 Z=68.244
+[2022.06.07-14.15.48:457][928]LogTemp: Warning: Hit something
+[2022.06.07-14.15.48:683][952]LogTemp: Warning: Bullets Left: 0
+[2022.06.07-14.15.48:683][952]LogTemp: Warning: Start: X=1300.884 Y=570.438 Z=162.337 End: X=1938.097 Y=1341.115 Z=109.183
+[2022.06.07-14.15.48:690][953]LogTemp: Warning: Start: X=1938.097 Y=1341.115 Z=109.183 End: X=2575.309 Y=2111.792 Z=56.028
+[2022.06.07-14.15.48:690][953]LogTemp: Warning: Hit something
+[2022.06.07-14.15.49:909][ 99]LogTemp: Warning: Total Ammo Left: 78
+[2022.06.07-14.15.51:610][303]LogTemp: Warning: Colliding
+[2022.06.07-14.15.51:610][303]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.15.51:851][332]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.15.59:973][302]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.06.07-14.15.59:973][302]LogWorld: BeginTearingDown for /Game/FirstPerson/Maps/UEDPIE_0_TestMap
+[2022.06.07-14.15.59:973][302]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2022.06.07-14.15.59:973][302]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.06.07-14.15.59:982][302]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.06.07-14.15.59:986][302]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.06.07-14.16.00:015][302]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.06.07-14.16.00:015][302]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2022.06.07-14.16.00:017][302]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2022.06.07-14.16.00:023][302]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2022.06.07-14.16.00:048][303]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2022.06.07-14.16.13:504][808]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_TestExit.BP_TestExit
+[2022.06.07-14.16.13:504][808]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.06.07-14.16.13:861][808]LogSlate: Window 'Add Blueprint Class' being destroyed
+[2022.06.07-14.16.13:910][808]LogViewport: Scene viewport resized to 1523x946, mode Windowed.
+[2022.06.07-14.16.24:545][986]LogEditorTransaction: Undo Modify Component(s)
+[2022.06.07-14.16.39:907][736]BlueprintLog: New page: Compile BP_TestExit
+[2022.06.07-14.16.39:970][736]LogUObjectHash: Compacting FUObjectHashTables data took   1.31ms
+[2022.06.07-14.16.40:067][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_TestExit" FILE="../../../../../Projects/Heist/HeistTime/HeistTime/Content/Blueprints/BP_TestExit.uasset" SILENT=true
+[2022.06.07-14.16.40:070][736]LogSavePackage: Moving output files for package: /Game/Blueprints/BP_TestExit
+[2022.06.07-14.16.40:070][736]LogSavePackage: Moving '../../../../../Projects/Heist/HeistTime/HeistTime/Saved/BP_TestExit7D0ABD794AB56E440484B0864E3D7D1D.tmp' to '../../../../../Projects/Heist/HeistTime/HeistTime/Content/Blueprints/BP_TestExit.uasset'
+[2022.06.07-14.16.40:081][736]AssetCheck: New page: Asset Save: BP_TestExit
+[2022.06.07-14.16.40:081][736]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_TestExit.BP_TestExit
+[2022.06.07-14.16.40:851][805]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_TestExit" FILE="../../../../../Projects/Heist/HeistTime/HeistTime/Content/Blueprints/BP_TestExit.uasset" SILENT=true
+[2022.06.07-14.16.40:854][805]LogSavePackage: Moving output files for package: /Game/Blueprints/BP_TestExit
+[2022.06.07-14.16.40:854][805]LogSavePackage: Moving '../../../../../Projects/Heist/HeistTime/HeistTime/Saved/BP_TestExit70C0F5FF4601284D6AD3EAA9B5E4AAED.tmp' to '../../../../../Projects/Heist/HeistTime/HeistTime/Content/Blueprints/BP_TestExit.uasset'
+[2022.06.07-14.16.40:866][805]AssetCheck: New page: Asset Save: BP_TestExit
+[2022.06.07-14.16.40:866][805]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_TestExit.BP_TestExit
+[2022.06.07-14.16.41:635][891]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPerson/Maps/TestMap" FILE="../../../../../Projects/Heist/HeistTime/HeistTime/Content/FirstPerson/Maps/TestMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.06.07-14.16.41:671][891]LogUObjectHash: Compacting FUObjectHashTables data took   1.32ms
+[2022.06.07-14.16.41:684][891]LogSavePackage: Moving output files for package: /Game/FirstPerson/Maps/TestMap
+[2022.06.07-14.16.41:684][891]LogSavePackage: Moving '../../../../../Projects/Heist/HeistTime/HeistTime/Saved/TestMapFF302E44485F8D671C37BD8936DDDAEC.tmp' to '../../../../../Projects/Heist/HeistTime/HeistTime/Content/FirstPerson/Maps/TestMap.umap'
+[2022.06.07-14.16.41:693][891]LogFileHelpers: No new changes to save!
+[2022.06.07-14.16.41:704][891]AssetCheck: New page: Asset Save: TestMap
+[2022.06.07-14.16.41:704][891]LogContentValidation: Display: Validating World /Game/FirstPerson/Maps/TestMap.TestMap
+[2022.06.07-14.16.42:524][964]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Blueprints/BP_TestExit.BP_TestExit_C
+[2022.06.07-14.16.42:524][964]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Blueprints/BP_TestExit.BP_TestExit_C
+[2022.06.07-14.16.42:524][964]LogActorFactory: Actor Factory spawned Blueprint /Game/Blueprints/BP_TestExit.BP_TestExit as actor: BP_TestExit_C /Game/FirstPerson/Maps/TestMap.TestMap:PersistentLevel.BP_TestExit_C_0
+[2022.06.07-14.16.42:524][964]LogActorFactory: Actor Factory spawned Blueprint /Game/Blueprints/BP_TestExit.BP_TestExit as actor: BP_TestExit_C /Game/FirstPerson/Maps/TestMap.TestMap:PersistentLevel.BP_TestExit_C_0
+[2022.06.07-14.16.43:341][ 59]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Blueprints/BP_TestExit.BP_TestExit_C
+[2022.06.07-14.16.43:341][ 59]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Blueprints/BP_TestExit.BP_TestExit_C
+[2022.06.07-14.16.43:342][ 59]LogActorFactory: Actor Factory spawned Blueprint /Game/Blueprints/BP_TestExit.BP_TestExit as actor: BP_TestExit_C /Game/FirstPerson/Maps/TestMap.TestMap:PersistentLevel.BP_TestExit_C_1
+[2022.06.07-14.16.43:342][ 59]LogActorFactory: Actor Factory spawned Blueprint /Game/Blueprints/BP_TestExit.BP_TestExit as actor: BP_TestExit_C /Game/FirstPerson/Maps/TestMap.TestMap:PersistentLevel.BP_TestExit_C_1
+[2022.06.07-14.16.54:741][333]BlueprintLog: New page: Compile BP_TestExit
+[2022.06.07-14.16.54:824][333]LogUObjectHash: Compacting FUObjectHashTables data took   1.19ms
+[2022.06.07-14.16.54:888][333]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_TestExit" FILE="../../../../../Projects/Heist/HeistTime/HeistTime/Content/Blueprints/BP_TestExit.uasset" SILENT=true
+[2022.06.07-14.16.54:891][333]LogSavePackage: Moving output files for package: /Game/Blueprints/BP_TestExit
+[2022.06.07-14.16.54:891][333]LogSavePackage: Moving '../../../../../Projects/Heist/HeistTime/HeistTime/Saved/BP_TestExit5D6100A74E9C25AB2A9AC49FA2FFCE7D.tmp' to '../../../../../Projects/Heist/HeistTime/HeistTime/Content/Blueprints/BP_TestExit.uasset'
+[2022.06.07-14.16.54:901][333]AssetCheck: New page: Asset Save: BP_TestExit
+[2022.06.07-14.16.54:901][333]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/BP_TestExit.BP_TestExit
+[2022.06.07-14.16.56:446][488]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPerson/Maps/TestMap" FILE="../../../../../Projects/Heist/HeistTime/HeistTime/Content/FirstPerson/Maps/TestMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.06.07-14.16.56:482][488]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
+[2022.06.07-14.16.56:496][488]LogSavePackage: Moving output files for package: /Game/FirstPerson/Maps/TestMap
+[2022.06.07-14.16.56:496][488]LogSavePackage: Moving '../../../../../Projects/Heist/HeistTime/HeistTime/Saved/TestMapC0406A9642A1F51705ABE49D4BEBF7ED.tmp' to '../../../../../Projects/Heist/HeistTime/HeistTime/Content/FirstPerson/Maps/TestMap.umap'
+[2022.06.07-14.16.56:505][488]LogFileHelpers: No new changes to save!
+[2022.06.07-14.16.56:515][488]AssetCheck: New page: Asset Save: TestMap
+[2022.06.07-14.16.56:515][488]LogContentValidation: Display: Validating World /Game/FirstPerson/Maps/TestMap.TestMap
+[2022.06.07-14.16.57:990][644]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.06.07-14.16.57:996][644]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.06.07-14.16.57:996][644]PIE: New page: PIE session: TestMap (7 Jun 2022, 16:16:57)
+[2022.06.07-14.16.58:022][644]LogPlayLevel: Creating play world package: /Game/FirstPerson/Maps/UEDPIE_0_TestMap
+[2022.06.07-14.16.58:027][644]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004770s)
+[2022.06.07-14.16.58:027][644]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPerson/Maps/TestMap.TestMap to /Game/FirstPerson/Maps/UEDPIE_0_TestMap.TestMap (0.004856s)
+[2022.06.07-14.16.58:027][644]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.06.07-14.16.58:027][644]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.06.07-14.16.58:027][644]LogAIModule: Creating AISystem for world TestMap
+[2022.06.07-14.16.58:027][644]LogPlayLevel: PIE: World Init took: (0.000584s)
+[2022.06.07-14.16.58:062][644]LogUObjectHash: Compacting FUObjectHashTables data took   1.21ms
+[2022.06.07-14.16.58:063][644]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2022.06.07-14.16.58:063][644]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.06.07-14.16.58:063][644]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.06.07-14.16.58:063][644]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.06.07-14.16.58:063][644]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.06.07-14.16.58:063][644]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.06.07-14.16.58:063][644]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.06.07-14.16.58:063][644]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.06.07-14.16.58:063][644]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.06.07-14.16.58:063][644]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.06.07-14.16.58:063][644]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.06.07-14.16.58:063][644]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.06.07-14.16.58:065][644]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.06.07-14.16.58:217][644]LogAudioMixer: Display: Using Audio Hardware Device Headset Earphone (CORSAIR VOID ELITE USB Gaming Headset)
+[2022.06.07-14.16.58:218][644]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.06.07-14.16.58:218][644]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.06.07-14.16.58:218][644]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.06.07-14.16.58:219][644]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=10
+[2022.06.07-14.16.58:219][644]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=10
+[2022.06.07-14.16.58:220][644]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=10
+[2022.06.07-14.16.58:220][644]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=10
+[2022.06.07-14.16.58:220][644]LogInit: FAudioDevice initialized.
+[2022.06.07-14.16.58:220][644]LogAudio: Display: Audio Device (ID: 10) registered with world 'TestMap'.
+[2022.06.07-14.16.58:233][644]LogLoad: Game class is 'BP_HeistTimeGM_C'
+[2022.06.07-14.16.58:235][644]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2022.06.07-15.16.58
+[2022.06.07-14.16.58:235][644]LogWorld: Bringing up level for play took: 0.002041
+[2022.06.07-14.16.58:236][644]LogOnline: OSS: Created online subsystem instance for: :Context_23
+[2022.06.07-14.16.58:238][644]LogTemp: Warning: Total Ammo Left: 84
+[2022.06.07-14.16.58:238][644]LogTemp: Warning: Total Ammo Left: 114
+[2022.06.07-14.16.58:238][644]PIE: Server logged in
+[2022.06.07-14.16.58:239][644]PIE: Play in editor total start time 0.243 seconds.
+[2022.06.07-14.16.59:729][781]LogTemp: Warning: Bullets Left: 5
+[2022.06.07-14.16.59:729][781]LogTemp: Warning: Start: X=860.440 Y=850.000 Z=162.337 End: X=1860.440 Y=850.000 Z=113.287
+[2022.06.07-14.16.59:729][781]LogTemp: Warning: Hit something
+[2022.06.07-14.17.01:622][  8]LogTemp: Warning: Colliding
+[2022.06.07-14.17.01:622][  8]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.01:797][ 29]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.08:758][864]LogTemp: Warning: DETACHING
+[2022.06.07-14.17.08:764][864]LogTemp: Warning: Colliding
+[2022.06.07-14.17.08:764][864]LogTemp: Warning: Colliding
+[2022.06.07-14.17.08:764][864]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.08:764][864]LogTemp: Warning: Colliding
+[2022.06.07-14.17.08:764][864]LogTemp: Warning: Money: 180000
+[2022.06.07-14.17.08:764][864]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.17:862][952]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.06.07-14.17.17:862][952]LogWorld: BeginTearingDown for /Game/FirstPerson/Maps/UEDPIE_0_TestMap
+[2022.06.07-14.17.17:862][952]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2022.06.07-14.17.17:863][952]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.06.07-14.17.17:871][952]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.06.07-14.17.17:876][952]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.06.07-14.17.17:911][952]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.06.07-14.17.17:911][952]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2022.06.07-14.17.17:912][952]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2022.06.07-14.17.17:915][952]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.06.07-14.17.17:918][952]LogUObjectHash: Compacting FUObjectHashTables data took   1.22ms
+[2022.06.07-14.17.17:964][953]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2022.06.07-14.17.26:137][791]Cmd: EDIT COPY
+[2022.06.07-14.17.26:360][815]Cmd: EDIT PASTE
+[2022.06.07-14.17.28:591][ 68]Cmd: EDIT PASTE
+[2022.06.07-14.17.30:432][274]Cmd: EDIT PASTE
+[2022.06.07-14.17.31:199][356]LogDerivedDataCache: C:/Users/Adam/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:11.312 and deleted 13684 file(s) with total size 112 MiB.
+[2022.06.07-14.17.35:046][805]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPerson/Maps/TestMap" FILE="../../../../../Projects/Heist/HeistTime/HeistTime/Content/FirstPerson/Maps/TestMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.06.07-14.17.35:081][805]LogUObjectHash: Compacting FUObjectHashTables data took   1.35ms
+[2022.06.07-14.17.35:095][805]LogSavePackage: Moving output files for package: /Game/FirstPerson/Maps/TestMap
+[2022.06.07-14.17.35:096][805]LogSavePackage: Moving '../../../../../Projects/Heist/HeistTime/HeistTime/Saved/TestMap3B81785B4F990BD2EE4962934CBAB15E.tmp' to '../../../../../Projects/Heist/HeistTime/HeistTime/Content/FirstPerson/Maps/TestMap.umap'
+[2022.06.07-14.17.35:105][805]LogFileHelpers: No new changes to save!
+[2022.06.07-14.17.35:115][805]AssetCheck: New page: Asset Save: TestMap
+[2022.06.07-14.17.35:115][805]LogContentValidation: Display: Validating World /Game/FirstPerson/Maps/TestMap.TestMap
+[2022.06.07-14.17.36:636][976]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.06.07-14.17.36:643][976]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.06.07-14.17.36:643][976]PIE: New page: PIE session: TestMap (7 Jun 2022, 16:17:36)
+[2022.06.07-14.17.36:672][976]LogPlayLevel: Creating play world package: /Game/FirstPerson/Maps/UEDPIE_0_TestMap
+[2022.06.07-14.17.36:677][976]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004774s)
+[2022.06.07-14.17.36:677][976]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPerson/Maps/TestMap.TestMap to /Game/FirstPerson/Maps/UEDPIE_0_TestMap.TestMap (0.004861s)
+[2022.06.07-14.17.36:677][976]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.06.07-14.17.36:677][976]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.06.07-14.17.36:677][976]LogAIModule: Creating AISystem for world TestMap
+[2022.06.07-14.17.36:678][976]LogPlayLevel: PIE: World Init took: (0.000547s)
+[2022.06.07-14.17.36:712][976]LogUObjectHash: Compacting FUObjectHashTables data took   1.38ms
+[2022.06.07-14.17.36:713][976]LogAudio: Display: Creating Audio Device:                 Id: 11, Scope: Unique, Realtime: True
+[2022.06.07-14.17.36:713][976]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.06.07-14.17.36:713][976]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.06.07-14.17.36:713][976]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.06.07-14.17.36:713][976]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.06.07-14.17.36:713][976]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.06.07-14.17.36:713][976]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.06.07-14.17.36:713][976]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.06.07-14.17.36:713][976]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.06.07-14.17.36:713][976]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.06.07-14.17.36:713][976]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.06.07-14.17.36:713][976]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.06.07-14.17.36:715][976]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.06.07-14.17.36:867][976]LogAudioMixer: Display: Using Audio Hardware Device Headset Earphone (CORSAIR VOID ELITE USB Gaming Headset)
+[2022.06.07-14.17.36:867][976]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.06.07-14.17.36:867][976]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.06.07-14.17.36:867][976]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.06.07-14.17.36:868][976]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=11
+[2022.06.07-14.17.36:868][976]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=11
+[2022.06.07-14.17.36:870][976]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=11
+[2022.06.07-14.17.36:870][976]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=11
+[2022.06.07-14.17.36:870][976]LogInit: FAudioDevice initialized.
+[2022.06.07-14.17.36:870][976]LogAudio: Display: Audio Device (ID: 11) registered with world 'TestMap'.
+[2022.06.07-14.17.36:879][976]LogLoad: Game class is 'BP_HeistTimeGM_C'
+[2022.06.07-14.17.36:881][976]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2022.06.07-15.17.36
+[2022.06.07-14.17.36:881][976]LogWorld: Bringing up level for play took: 0.002295
+[2022.06.07-14.17.36:883][976]LogOnline: OSS: Created online subsystem instance for: :Context_24
+[2022.06.07-14.17.36:885][976]LogTemp: Warning: Total Ammo Left: 84
+[2022.06.07-14.17.36:885][976]LogTemp: Warning: Total Ammo Left: 114
+[2022.06.07-14.17.36:885][976]PIE: Server logged in
+[2022.06.07-14.17.36:886][976]PIE: Play in editor total start time 0.243 seconds.
+[2022.06.07-14.17.37:272][  8]LogTemp: Warning: Bullets Left: 5
+[2022.06.07-14.17.37:272][  8]LogTemp: Warning: Start: X=860.440 Y=850.000 Z=162.337 End: X=1860.440 Y=850.000 Z=113.287
+[2022.06.07-14.17.37:272][  8]LogTemp: Warning: Hit something
+[2022.06.07-14.17.38:257][126]LogTemp: Warning: Bullets Left: 4
+[2022.06.07-14.17.38:257][126]LogTemp: Warning: Start: X=1124.374 Y=970.279 Z=162.337 End: X=1490.350 Y=1895.668 Z=14.712
+[2022.06.07-14.17.38:265][127]LogTemp: Warning: Start: X=1490.350 Y=1895.668 Z=14.712 End: X=1856.327 Y=2821.057 Z=-132.913
+[2022.06.07-14.17.38:265][127]LogTemp: Warning: Hit something
+[2022.06.07-14.17.38:932][207]LogTemp: Warning: Bullets Left: 3
+[2022.06.07-14.17.38:932][207]LogTemp: Warning: Start: X=1275.995 Y=1345.807 Z=162.337 End: X=1641.972 Y=2271.196 Z=14.712
+[2022.06.07-14.17.38:942][208]LogTemp: Warning: Start: X=1641.972 Y=2271.196 Z=14.712 End: X=2007.948 Y=3196.584 Z=-132.913
+[2022.06.07-14.17.38:942][208]LogTemp: Warning: Hit something
+[2022.06.07-14.17.39:317][253]LogTemp: Warning: Bullets Left: 2
+[2022.06.07-14.17.39:317][253]LogTemp: Warning: Start: X=1360.947 Y=1560.608 Z=162.337 End: X=1726.923 Y=2485.997 Z=14.712
+[2022.06.07-14.17.39:325][254]LogTemp: Warning: Start: X=1726.923 Y=2485.997 Z=14.712 End: X=2092.899 Y=3411.385 Z=-132.913
+[2022.06.07-14.17.39:325][254]LogTemp: Warning: Hit something
+[2022.06.07-14.17.40:209][360]LogTemp: Warning: Colliding
+[2022.06.07-14.17.40:209][360]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.40:700][419]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.42:867][679]LogTemp: Warning: DETACHING
+[2022.06.07-14.17.42:867][679]LogTemp: Warning: Colliding
+[2022.06.07-14.17.42:867][679]LogTemp: Warning: Colliding
+[2022.06.07-14.17.42:867][679]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.42:867][679]LogTemp: Warning: Colliding
+[2022.06.07-14.17.42:867][679]LogTemp: Warning: Money: 180000
+[2022.06.07-14.17.42:867][679]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.44:301][851]LogTemp: Warning: Colliding
+[2022.06.07-14.17.44:301][851]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.44:584][885]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.46:834][155]LogTemp: Warning: DETACHING
+[2022.06.07-14.17.46:834][155]LogTemp: Warning: Colliding
+[2022.06.07-14.17.46:834][155]LogTemp: Warning: Colliding
+[2022.06.07-14.17.46:834][155]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.46:834][155]LogTemp: Warning: Colliding
+[2022.06.07-14.17.46:834][155]LogTemp: Warning: Money: 360000
+[2022.06.07-14.17.46:834][155]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.48:709][380]LogTemp: Warning: Colliding
+[2022.06.07-14.17.48:709][380]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.48:984][413]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.50:817][633]LogTemp: Warning: DETACHING
+[2022.06.07-14.17.50:817][633]LogTemp: Warning: Colliding
+[2022.06.07-14.17.50:818][633]LogTemp: Warning: Colliding
+[2022.06.07-14.17.50:818][633]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.50:818][633]LogTemp: Warning: Colliding
+[2022.06.07-14.17.50:818][633]LogTemp: Warning: Money: 540000
+[2022.06.07-14.17.50:818][633]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.52:701][859]LogTemp: Warning: Colliding
+[2022.06.07-14.17.52:702][859]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.52:968][891]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.54:810][112]LogTemp: Warning: DETACHING
+[2022.06.07-14.17.54:810][112]LogTemp: Warning: Colliding
+[2022.06.07-14.17.54:810][112]LogTemp: Warning: Colliding
+[2022.06.07-14.17.54:810][112]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.54:810][112]LogTemp: Warning: Colliding
+[2022.06.07-14.17.54:810][112]LogTemp: Warning: Money: 720000
+[2022.06.07-14.17.54:810][112]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.17.56:703][336]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.06.07-14.17.56:703][336]LogWorld: BeginTearingDown for /Game/FirstPerson/Maps/UEDPIE_0_TestMap
+[2022.06.07-14.17.56:703][336]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2022.06.07-14.17.56:703][336]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.06.07-14.17.56:712][336]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.06.07-14.17.56:716][336]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.06.07-14.17.56:751][336]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.06.07-14.17.56:751][336]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=11
+[2022.06.07-14.17.56:752][336]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=11
+[2022.06.07-14.17.56:758][336]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2022.06.07-14.17.56:804][337]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2022.06.07-14.20.06:176][587]LogHotReload: New module detected: UnrealEditor-HeistTime-0122.dll
+[2022.06.07-14.20.06:854][590]LogHotReload: Starting Hot-Reload from IDE
+[2022.06.07-14.20.07:133][590]Display: HotReload took  0.3s.
+[2022.06.07-14.20.07:133][590]Display: Reload/Re-instancing Complete: 1 package changed, 9 classes unchanged, 1 enum unchanged, 18 functions remapped
+[2022.06.07-14.20.20:223][694]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.06.07-14.20.20:231][694]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.06.07-14.20.20:231][694]PIE: New page: PIE session: TestMap (7 Jun 2022, 16:20:20)
+[2022.06.07-14.20.20:262][694]LogPlayLevel: Creating play world package: /Game/FirstPerson/Maps/UEDPIE_0_TestMap
+[2022.06.07-14.20.20:267][694]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004818s)
+[2022.06.07-14.20.20:267][694]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPerson/Maps/TestMap.TestMap to /Game/FirstPerson/Maps/UEDPIE_0_TestMap.TestMap (0.004906s)
+[2022.06.07-14.20.20:267][694]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.06.07-14.20.20:267][694]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.06.07-14.20.20:267][694]LogAIModule: Creating AISystem for world TestMap
+[2022.06.07-14.20.20:267][694]LogPlayLevel: PIE: World Init took: (0.000660s)
+[2022.06.07-14.20.20:326][694]LogUObjectHash: Compacting FUObjectHashTables data took   2.45ms
+[2022.06.07-14.20.20:329][694]LogAudio: Display: Creating Audio Device:                 Id: 12, Scope: Unique, Realtime: True
+[2022.06.07-14.20.20:329][694]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.06.07-14.20.20:329][694]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.06.07-14.20.20:329][694]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.06.07-14.20.20:329][694]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.06.07-14.20.20:329][694]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.06.07-14.20.20:329][694]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.06.07-14.20.20:329][694]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.06.07-14.20.20:329][694]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.06.07-14.20.20:330][694]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.06.07-14.20.20:330][694]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.06.07-14.20.20:330][694]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.06.07-14.20.20:331][694]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.06.07-14.20.20:485][694]LogAudioMixer: Display: Using Audio Hardware Device Headset Earphone (CORSAIR VOID ELITE USB Gaming Headset)
+[2022.06.07-14.20.20:485][694]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.06.07-14.20.20:485][694]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.06.07-14.20.20:485][694]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.06.07-14.20.20:486][694]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=12
+[2022.06.07-14.20.20:486][694]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=12
+[2022.06.07-14.20.20:487][694]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=12
+[2022.06.07-14.20.20:487][694]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=12
+[2022.06.07-14.20.20:487][694]LogInit: FAudioDevice initialized.
+[2022.06.07-14.20.20:487][694]LogAudio: Display: Audio Device (ID: 12) registered with world 'TestMap'.
+[2022.06.07-14.20.20:498][694]LogLoad: Game class is 'BP_HeistTimeGM_C'
+[2022.06.07-14.20.20:501][694]LogWorld: Bringing World /Game/FirstPerson/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2022.06.07-15.20.20
+[2022.06.07-14.20.20:501][694]LogWorld: Bringing up level for play took: 0.002295
+[2022.06.07-14.20.20:502][694]LogOnline: OSS: Created online subsystem instance for: :Context_25
+[2022.06.07-14.20.20:504][694]LogTemp: Warning: Total Ammo Left: 84
+[2022.06.07-14.20.20:504][694]LogTemp: Warning: Total Ammo Left: 114
+[2022.06.07-14.20.20:504][694]PIE: Server logged in
+[2022.06.07-14.20.20:505][694]PIE: Play in editor total start time 0.275 seconds.
+[2022.06.07-14.20.20:855][722]LogTemp: Warning: Bullets Left: 5
+[2022.06.07-14.20.20:855][722]LogTemp: Warning: Start: X=860.440 Y=850.000 Z=162.337 End: X=1860.440 Y=850.000 Z=113.287
+[2022.06.07-14.20.20:855][722]LogTemp: Warning: Hit something
+[2022.06.07-14.20.23:899][ 87]LogTemp: Warning: Colliding
+[2022.06.07-14.20.23:899][ 87]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.20.24:165][119]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.20.24:824][198]LogTemp: Warning: Colliding
+[2022.06.07-14.20.24:824][198]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.20.26:282][373]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.20.26:725][426]LogTemp: Warning: Colliding
+[2022.06.07-14.20.26:725][426]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.20.28:283][610]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.20.29:377][741]LogTemp: Warning: DETACHING
+[2022.06.07-14.20.29:377][741]LogTemp: Warning: Colliding
+[2022.06.07-14.20.29:377][741]LogTemp: Warning: Colliding
+[2022.06.07-14.20.29:377][741]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.20.29:377][741]LogTemp: Warning: Colliding
+[2022.06.07-14.20.29:377][741]LogTemp: Warning: Money: 180000
+[2022.06.07-14.20.29:377][741]LogTemp: Warning: Item nearby or not nearby
+[2022.06.07-14.20.32:183][ 69]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.06.07-14.20.32:183][ 69]LogWorld: BeginTearingDown for /Game/FirstPerson/Maps/UEDPIE_0_TestMap
+[2022.06.07-14.20.32:183][ 69]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2022.06.07-14.20.32:183][ 69]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.06.07-14.20.32:194][ 69]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.06.07-14.20.32:199][ 69]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.06.07-14.20.32:238][ 69]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.06.07-14.20.32:238][ 69]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=12
+[2022.06.07-14.20.32:240][ 69]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=12
+[2022.06.07-14.20.32:246][ 69]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
+[2022.06.07-14.20.32:292][ 70]LogPlayLevel: Display: Destroying online subsystem :Context_25

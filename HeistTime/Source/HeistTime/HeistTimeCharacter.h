@@ -65,8 +65,13 @@ public:
 		return _pNearbyPickup;
 	}
 
-	void SetCurrentBag(ABag_Pickup* pickup) {
+	bool SetCurrentBag(ABag_Pickup* pickup) {
+		if (_pCurrentBag != nullptr) {
+			return false;
+		}
+
 		_pCurrentBag = pickup;
+		return true;
 	}
 
 

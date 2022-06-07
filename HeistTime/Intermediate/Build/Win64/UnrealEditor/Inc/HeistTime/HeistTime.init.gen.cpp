@@ -27,13 +27,13 @@ void EmptyLinkFunctionForGeneratedCodeHeistTime_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xB9BBBBD0,
-				0x77661399,
+				0xED461093,
+				0x4624EE45,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_HeistTime.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_HeistTime.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_HeistTime(Z_Construct_UPackage__Script_HeistTime, TEXT("/Script/HeistTime"), Z_Registration_Info_UPackage__Script_HeistTime, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xB9BBBBD0, 0x77661399));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_HeistTime(Z_Construct_UPackage__Script_HeistTime, TEXT("/Script/HeistTime"), Z_Registration_Info_UPackage__Script_HeistTime, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xED461093, 0x4624EE45));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

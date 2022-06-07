@@ -45,6 +45,12 @@
     <ClInclude Include="..\..\Source\HeistTime\Bag_Pickup.h">
       <Filter>Source\HeistTime</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\HeistTime\ExitPoint.cpp">
+      <Filter>Source\HeistTime</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HeistTime\ExitPoint.h">
+      <Filter>Source\HeistTime</Filter>
+    </ClInclude>
     <None Include="..\..\Source\HeistTime\HeistTime.Build.cs">
       <Filter>Source\HeistTime</Filter>
     </None>

@@ -1,0 +1,15 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\exitpoint.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\heisttimeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\development\\heisttime\\definitions.heisttime.h",
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\source\\heisttime\\exitpoint.h",
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\exitpoint.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

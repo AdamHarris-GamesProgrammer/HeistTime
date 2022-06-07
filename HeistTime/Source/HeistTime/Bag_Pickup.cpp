@@ -15,8 +15,9 @@ void ABag_Pickup::Pickup(AHeistTimeCharacter* character)
 {
 	Super::Pickup(character);
 
-	character->SetCurrentBag(this);
-	AttachToActor(character->GetOwner(), FAttachmentTransformRules::KeepRelativeTransform);
+	if (character->SetCurrentBag(this)) {
+		AttachToActor(character->GetOwner(), FAttachmentTransformRules::KeepRelativeTransform);
+	}
 }
 
 void ABag_Pickup::BeginPlay()
