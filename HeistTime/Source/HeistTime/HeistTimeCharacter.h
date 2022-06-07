@@ -36,7 +36,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	AWeapon* GetCurrentWeapon() const {
-		return _weapon;
+		return _pCurrentWeapon;
 	}
 
 protected:
@@ -84,6 +84,8 @@ protected:
 
 	void CrouchHandle();
 
+	void MouseWheelHandle(float Val);
+
 	/**
 	 * Called via input to turn at a given rate.
 	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
@@ -109,12 +111,19 @@ public:
 
 private:
 	
-	UPROPERTY(EditAnywhere)
-	TSubclassOf<class AWeapon> _weaponClass;
+	UPROPERTY(EditAnywhere, Category = "Weapons")
+	TSubclassOf<class AWeapon> _primaryWeaponClass;
+
+	UPROPERTY(EditAnywhere, Category = "Weapons")
+	TSubclassOf<class AWeapon> _secondaryWeaponClass;
 	
 	UPROPERTY()
-	class AWeapon* _weapon;
+	class AWeapon* _pCurrentWeapon;
+
+	TArray<class AWeapon*> _pWeapons;
 
 	APickupBase* _pNearbyPickup;
+
+	int _currentWeaponIndex = 0;
 };
 

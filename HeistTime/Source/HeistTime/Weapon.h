@@ -50,6 +50,11 @@ public:
 	}
 
 	UFUNCTION(BlueprintCallable)
+	FString GetAmmoString() {
+		return FString::FromInt(_bulletsInClip) + "/" + FString::FromInt(_currentAmmo);
+	}
+
+	UFUNCTION(BlueprintCallable)
 	void CollectAmmo(int amount);
 
 private:

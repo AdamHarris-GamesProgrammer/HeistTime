@@ -42,9 +42,18 @@ void AHeistTimeCharacter::BeginPlay()
 	// Call the base class  
 	Super::BeginPlay();
 
-	_weapon = GetWorld()->SpawnActor<AWeapon>(_weaponClass);
-	_weapon->AttachToComponent(Mesh1P, FAttachmentTransformRules::KeepRelativeTransform, "GripPoint");
-	_weapon->SetOwner(this);
+	AWeapon* pPrimaryWeapon = GetWorld()->SpawnActor<AWeapon>(_primaryWeaponClass);
+	pPrimaryWeapon->AttachToComponent(Mesh1P, FAttachmentTransformRules::KeepRelativeTransform, "GripPoint");
+	pPrimaryWeapon->SetOwner(this);
+	_pWeapons.Add(pPrimaryWeapon);
+
+	AWeapon* pSecondaryWeapon = GetWorld()->SpawnActor<AWeapon>(_secondaryWeaponClass);
+	pSecondaryWeapon->AttachToComponent(Mesh1P, FAttachmentTransformRules::KeepRelativeTransform, "GripPoint");
+	pSecondaryWeapon->SetOwner(this);
+	_pWeapons.Add(pSecondaryWeapon);
+
+	_pCurrentWeapon = pPrimaryWeapon;
+	pSecondaryWeapon->SetActorHiddenInGame(true);
 }
 
 //////////////////////////////////////////////////////////////////////////// Input
@@ -78,12 +87,14 @@ void AHeistTimeCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	PlayerInputComponent->BindAxis("Look Up / Down Mouse", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("Turn Right / Left Gamepad", this, &AHeistTimeCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("Look Up / Down Gamepad", this, &AHeistTimeCharacter::LookUpAtRate);
+
+	PlayerInputComponent->BindAxis("MouseWheel", this, &AHeistTimeCharacter::MouseWheelHandle);
 }
 
 void AHeistTimeCharacter::OnPrimaryAction()
 {
-	if (_weapon != nullptr) {
-		_weapon->PullTrigger();
+	if (_pCurrentWeapon != nullptr) {
+		_pCurrentWeapon->PullTrigger();
 	}
 
 	// Trigger the OnItemUsed Event
@@ -92,8 +103,8 @@ void AHeistTimeCharacter::OnPrimaryAction()
 
 void AHeistTimeCharacter::OnReloadAction()
 {
-	if (_weapon != nullptr) {
-		_weapon->Reload();
+	if (_pCurrentWeapon != nullptr) {
+		_pCurrentWeapon->Reload();
 	}
 }
 
@@ -129,6 +140,20 @@ void AHeistTimeCharacter::CrouchHandle()
 	else {
 		Crouch(true);
 	}
+}
+
+void AHeistTimeCharacter::MouseWheelHandle(float Val)
+{
+	if (Val == 0.0f) return;
+
+	_currentWeaponIndex = (_currentWeaponIndex + (int)Val) % _pWeapons.Num();
+	if (_currentWeaponIndex < 0) _currentWeaponIndex = _pWeapons.Num() - 1;
+
+	UE_LOG(LogTemp, Warning, TEXT("Current Weapon: %i"), _currentWeaponIndex);
+
+	_pCurrentWeapon->SetActorHiddenInGame(true);
+	_pCurrentWeapon = _pWeapons[_currentWeaponIndex];
+	_pCurrentWeapon->SetActorHiddenInGame(false);
 }
 
 void AHeistTimeCharacter::TurnAtRate(float Rate)

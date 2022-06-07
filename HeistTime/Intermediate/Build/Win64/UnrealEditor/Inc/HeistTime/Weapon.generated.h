@@ -17,6 +17,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_HeistTime_Source_HeistTime_Weapon_h_24_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execCollectAmmo); \
+	DECLARE_FUNCTION(execGetAmmoString); \
 	DECLARE_FUNCTION(execGetBulletsInClip); \
 	DECLARE_FUNCTION(execGetCurrentAmmo);
 
@@ -24,6 +25,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_HeistTime_Source_HeistTime_Weapon_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execCollectAmmo); \
+	DECLARE_FUNCTION(execGetAmmoString); \
 	DECLARE_FUNCTION(execGetBulletsInClip); \
 	DECLARE_FUNCTION(execGetCurrentAmmo);
 
