@@ -18,7 +18,7 @@ struct Bullet {
 };
 
 
-UCLASS()
+UCLASS(Blueprintable)
 class HEISTTIME_API AWeapon : public AActor
 {
 	GENERATED_BODY()
@@ -48,6 +48,10 @@ public:
 	int GetBulletsInClip() const {
 		return _bulletsInClip;
 	}
+
+	UFUNCTION(BlueprintCallable)
+	void CollectAmmo(int amount);
+
 private:
 	UPROPERTY(VisibleAnywhere)
 	class USceneComponent* pRootComponent;

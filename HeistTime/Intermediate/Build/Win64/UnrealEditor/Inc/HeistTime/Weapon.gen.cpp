@@ -18,6 +18,14 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AWeapon::execCollectAmmo)
+	{
+		P_GET_PROPERTY(FIntProperty,Z_Param_amount);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->CollectAmmo(Z_Param_amount);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AWeapon::execGetBulletsInClip)
 	{
 		P_FINISH;
@@ -36,10 +44,43 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 	{
 		UClass* Class = AWeapon::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "CollectAmmo", &AWeapon::execCollectAmmo },
 			{ "GetBulletsInClip", &AWeapon::execGetBulletsInClip },
 			{ "GetCurrentAmmo", &AWeapon::execGetCurrentAmmo },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AWeapon_CollectAmmo_Statics
+	{
+		struct Weapon_eventCollectAmmo_Parms
+		{
+			int32 amount;
+		};
+		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_amount;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AWeapon_CollectAmmo_Statics::NewProp_amount = { "amount", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Weapon_eventCollectAmmo_Parms, amount), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AWeapon_CollectAmmo_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AWeapon_CollectAmmo_Statics::NewProp_amount,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AWeapon_CollectAmmo_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Weapon.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AWeapon_CollectAmmo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWeapon, nullptr, "CollectAmmo", nullptr, nullptr, sizeof(Z_Construct_UFunction_AWeapon_CollectAmmo_Statics::Weapon_eventCollectAmmo_Parms), Z_Construct_UFunction_AWeapon_CollectAmmo_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AWeapon_CollectAmmo_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AWeapon_CollectAmmo_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AWeapon_CollectAmmo_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AWeapon_CollectAmmo()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AWeapon_CollectAmmo_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AWeapon_GetBulletsInClip_Statics
 	{
@@ -170,12 +211,15 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_HeistTime,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AWeapon_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AWeapon_CollectAmmo, "CollectAmmo" }, // 2710192995
 		{ &Z_Construct_UFunction_AWeapon_GetBulletsInClip, "GetBulletsInClip" }, // 3835262088
 		{ &Z_Construct_UFunction_AWeapon_GetCurrentAmmo, "GetCurrentAmmo" }, // 2901713512
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::Class_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
 		{ "IncludePath", "Weapon.h" },
+		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Weapon.h" },
 	};
 #endif
@@ -307,9 +351,9 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_Weapon_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AWeapon, AWeapon::StaticClass, TEXT("AWeapon"), &Z_Registration_Info_UClass_AWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWeapon), 3851281577U) },
+		{ Z_Construct_UClass_AWeapon, AWeapon::StaticClass, TEXT("AWeapon"), &Z_Registration_Info_UClass_AWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWeapon), 2529487780U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_Weapon_h_803465248(TEXT("/Script/HeistTime"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_Weapon_h_1126747740(TEXT("/Script/HeistTime"),
 		Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_Weapon_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_Weapon_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

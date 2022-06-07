@@ -75,6 +75,15 @@ void AWeapon::Tick(float DeltaTime)
 	//pBulletsToRemove.RemoveAll();
 }
 
+void AWeapon::CollectAmmo(int amount)
+{
+	_currentAmmo += amount;
+
+	if (_currentAmmo > _totalAmmo) {
+		_currentAmmo = _totalAmmo;
+	}
+}
+
 void AWeapon::PullTrigger() {
 	if (_bulletsInClip == 0) return;
 
@@ -116,11 +125,11 @@ void AWeapon::Reload()
 
 	int remainder = _clipSize - _bulletsInClip;
 
-	if (remainder > _currentAmmo - remainder) {
+	if (remainder > _currentAmmo) {
 		remainder = _currentAmmo;
 	}
 
-	_bulletsInClip = _clipSize;
+	_bulletsInClip = remainder;
 	_currentAmmo -= remainder;
 
 	UE_LOG(LogTemp, Warning, TEXT("Total Ammo Left: %i"), _currentAmmo);

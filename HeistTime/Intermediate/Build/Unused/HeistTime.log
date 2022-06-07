@@ -3,15 +3,15 @@
   Using 'git status' to determine working set for adaptive non-unity build (E:\UE\Projects\Heist\HeistTime).
   Building HeistTimeEditor...
   Using Visual Studio 2019 14.29.30141 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive Build] Excluded from HeistTime unity file: HeistTimeCharacter.cpp, PickupBase.cpp, TP_PickUpComponent.cpp, Weapon.cpp
+  [Adaptive Build] Excluded from HeistTime unity file: Weapon.cpp
   Determining max actions to execute in parallel (4 physical cores, 8 logical cores)
     Executing up to 4 processes, one per physical core
   Building 4 actions with 4 processes...
-  [1/4] Compile PickupBase.cpp
-  [2/4] Link UnrealEditor-HeistTime-0058.lib
-     Creating library E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0058.lib and object E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0058.exp
-  [3/4] Link UnrealEditor-HeistTime-0058.dll
-     Creating library E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0058.suppressed.lib and object E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0058.suppressed.exp
+  [1/4] Compile Weapon.cpp
+  [2/4] Link UnrealEditor-HeistTime-0063.lib
+     Creating library E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0063.lib and object E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0063.exp
+  [3/4] Link UnrealEditor-HeistTime-0063.dll
+     Creating library E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0063.suppressed.lib and object E:\UE\Projects\Heist\HeistTime\HeistTime\Intermediate\Build\Win64\UnrealEditor\Development\HeistTime\UnrealEditor-HeistTime-0063.suppressed.exp
   [4/4] WriteMetadata HeistTimeEditor.target
-  Total time in Parallel executor: 1.49 seconds
-  Total execution time: 2.31 seconds
+  Total time in Parallel executor: 1.88 seconds
+  Total execution time: 2.85 seconds
