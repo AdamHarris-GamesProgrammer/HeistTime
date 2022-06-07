@@ -22,6 +22,14 @@ public:
 
 	void Pickup(class AHeistTimeCharacter* character);
 
+	UFUNCTION(BlueprintCallable)
+	int GetAmountToPickup() const { return _amountToPickup; }
+
+	UFUNCTION(BlueprintCallable)
+	FString GetPickupName() const {
+		return _pickupName;
+	}
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -43,6 +51,11 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Pickup Base")
 	class USphereComponent* _pSphere = nullptr;
 
+	UPROPERTY(EditAnywhere, Category = "Pickup Base")
+	int _amountToPickup = 1;
+
+	UPROPERTY(EditAnywhere, Category = "Pickup Base")
+	FString _pickupName = "Pickup";
 
 
 

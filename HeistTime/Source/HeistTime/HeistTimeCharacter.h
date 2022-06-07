@@ -59,6 +59,7 @@ public:
 		_pNearbyPickup = pickup;
 	}
 
+	UFUNCTION(BlueprintCallable)
 	APickupBase* GetNearbyPickup() const {
 		return _pNearbyPickup;
 	}

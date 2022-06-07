@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class APickupBase;
 class AWeapon;
 #ifdef HEISTTIME_HeistTimeCharacter_generated_h
 #error "HeistTimeCharacter.generated.h already included, missing '#pragma once' in HeistTimeCharacter.h"
@@ -24,11 +25,13 @@ static inline void FOnUseItem_DelegateWrapper(const FMulticastScriptDelegate& On
 #define FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_24_SPARSE_DATA
 #define FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_24_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetNearbyPickup); \
 	DECLARE_FUNCTION(execGetCurrentWeapon);
 
 
 #define FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetNearbyPickup); \
 	DECLARE_FUNCTION(execGetCurrentWeapon);
 
 

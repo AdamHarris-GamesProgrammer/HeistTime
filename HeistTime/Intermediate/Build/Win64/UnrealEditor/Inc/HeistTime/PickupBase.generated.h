@@ -34,13 +34,17 @@ static inline void FOnPickUpEvent_DelegateWrapper(const FMulticastScriptDelegate
 #define FID_HeistTime_Source_HeistTime_PickupBase_h_14_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnSphereEndOverlap); \
-	DECLARE_FUNCTION(execOnSphereBeginOverlap);
+	DECLARE_FUNCTION(execOnSphereBeginOverlap); \
+	DECLARE_FUNCTION(execGetPickupName); \
+	DECLARE_FUNCTION(execGetAmountToPickup);
 
 
 #define FID_HeistTime_Source_HeistTime_PickupBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnSphereEndOverlap); \
-	DECLARE_FUNCTION(execOnSphereBeginOverlap);
+	DECLARE_FUNCTION(execOnSphereBeginOverlap); \
+	DECLARE_FUNCTION(execGetPickupName); \
+	DECLARE_FUNCTION(execGetAmountToPickup);
 
 
 #define FID_HeistTime_Source_HeistTime_PickupBase_h_14_INCLASS_NO_PURE_DECLS \

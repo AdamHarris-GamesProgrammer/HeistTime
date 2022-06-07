@@ -77,14 +77,94 @@ void EmptyLinkFunctionForGeneratedCodePickupBase() {}
 		P_THIS->OnSphereBeginOverlap(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(APickupBase::execGetPickupName)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->GetPickupName();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(APickupBase::execGetAmountToPickup)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(int32*)Z_Param__Result=P_THIS->GetAmountToPickup();
+		P_NATIVE_END;
+	}
 	void APickupBase::StaticRegisterNativesAPickupBase()
 	{
 		UClass* Class = APickupBase::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetAmountToPickup", &APickupBase::execGetAmountToPickup },
+			{ "GetPickupName", &APickupBase::execGetPickupName },
 			{ "OnSphereBeginOverlap", &APickupBase::execOnSphereBeginOverlap },
 			{ "OnSphereEndOverlap", &APickupBase::execOnSphereEndOverlap },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_APickupBase_GetAmountToPickup_Statics
+	{
+		struct PickupBase_eventGetAmountToPickup_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_APickupBase_GetAmountToPickup_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PickupBase_eventGetAmountToPickup_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APickupBase_GetAmountToPickup_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APickupBase_GetAmountToPickup_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APickupBase_GetAmountToPickup_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PickupBase.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APickupBase_GetAmountToPickup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APickupBase, nullptr, "GetAmountToPickup", nullptr, nullptr, sizeof(Z_Construct_UFunction_APickupBase_GetAmountToPickup_Statics::PickupBase_eventGetAmountToPickup_Parms), Z_Construct_UFunction_APickupBase_GetAmountToPickup_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APickupBase_GetAmountToPickup_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APickupBase_GetAmountToPickup_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APickupBase_GetAmountToPickup_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APickupBase_GetAmountToPickup()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APickupBase_GetAmountToPickup_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_APickupBase_GetPickupName_Statics
+	{
+		struct PickupBase_eventGetPickupName_Parms
+		{
+			FString ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_APickupBase_GetPickupName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PickupBase_eventGetPickupName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APickupBase_GetPickupName_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APickupBase_GetPickupName_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APickupBase_GetPickupName_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PickupBase.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APickupBase_GetPickupName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APickupBase, nullptr, "GetPickupName", nullptr, nullptr, sizeof(Z_Construct_UFunction_APickupBase_GetPickupName_Statics::PickupBase_eventGetPickupName_Parms), Z_Construct_UFunction_APickupBase_GetPickupName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APickupBase_GetPickupName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APickupBase_GetPickupName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APickupBase_GetPickupName_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APickupBase_GetPickupName()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APickupBase_GetPickupName_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_APickupBase_OnSphereBeginOverlap_Statics
 	{
@@ -251,6 +331,14 @@ void EmptyLinkFunctionForGeneratedCodePickupBase() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp__pSphere_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp__pSphere;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp__amountToPickup_MetaData[];
+#endif
+		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp__amountToPickup;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp__pickupName_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp__pickupName;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -260,6 +348,8 @@ void EmptyLinkFunctionForGeneratedCodePickupBase() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_HeistTime,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APickupBase_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_APickupBase_GetAmountToPickup, "GetAmountToPickup" }, // 2451881045
+		{ &Z_Construct_UFunction_APickupBase_GetPickupName, "GetPickupName" }, // 2255710176
 		{ &Z_Construct_UFunction_APickupBase_OnSphereBeginOverlap, "OnSphereBeginOverlap" }, // 496292755
 		{ &Z_Construct_UFunction_APickupBase_OnSphereEndOverlap, "OnSphereEndOverlap" }, // 713865814
 	};
@@ -296,10 +386,26 @@ void EmptyLinkFunctionForGeneratedCodePickupBase() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APickupBase_Statics::NewProp__pSphere = { "_pSphere", nullptr, (EPropertyFlags)0x0040000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APickupBase, _pSphere), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APickupBase_Statics::NewProp__pSphere_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickupBase_Statics::NewProp__pSphere_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APickupBase_Statics::NewProp__amountToPickup_MetaData[] = {
+		{ "Category", "Pickup Base" },
+		{ "ModuleRelativePath", "PickupBase.h" },
+	};
+#endif
+	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_APickupBase_Statics::NewProp__amountToPickup = { "_amountToPickup", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APickupBase, _amountToPickup), METADATA_PARAMS(Z_Construct_UClass_APickupBase_Statics::NewProp__amountToPickup_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickupBase_Statics::NewProp__amountToPickup_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APickupBase_Statics::NewProp__pickupName_MetaData[] = {
+		{ "Category", "Pickup Base" },
+		{ "ModuleRelativePath", "PickupBase.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_APickupBase_Statics::NewProp__pickupName = { "_pickupName", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APickupBase, _pickupName), METADATA_PARAMS(Z_Construct_UClass_APickupBase_Statics::NewProp__pickupName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APickupBase_Statics::NewProp__pickupName_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APickupBase_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickupBase_Statics::NewProp_OnPickUp,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickupBase_Statics::NewProp__pMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickupBase_Statics::NewProp__pSphere,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickupBase_Statics::NewProp__amountToPickup,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickupBase_Statics::NewProp__pickupName,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APickupBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APickupBase>::IsAbstract,
@@ -337,9 +443,9 @@ void EmptyLinkFunctionForGeneratedCodePickupBase() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_PickupBase_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APickupBase, APickupBase::StaticClass, TEXT("APickupBase"), &Z_Registration_Info_UClass_APickupBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APickupBase), 2887593365U) },
+		{ Z_Construct_UClass_APickupBase, APickupBase::StaticClass, TEXT("APickupBase"), &Z_Registration_Info_UClass_APickupBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APickupBase), 547934894U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_PickupBase_h_2379079559(TEXT("/Script/HeistTime"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_PickupBase_h_2487492309(TEXT("/Script/HeistTime"),
 		Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_PickupBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_PickupBase_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
