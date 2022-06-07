@@ -1,0 +1,17 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\bag_pickup.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\heisttimeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\development\\heisttime\\definitions.heisttime.h",
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\source\\heisttime\\bag_pickup.h",
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\source\\heisttime\\pickupbase.h",
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\pickupbase.generated.h",
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\bag_pickup.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

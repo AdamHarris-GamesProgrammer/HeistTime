@@ -20,7 +20,7 @@ public:
 	UPROPERTY(BlueprintAssignable, Category = "Interaction")
 	FOnPickUpEvent OnPickUp;
 
-	void Pickup(class AHeistTimeCharacter* character);
+	virtual void Pickup(class AHeistTimeCharacter* character);
 
 	UFUNCTION(BlueprintCallable)
 	int GetAmountToPickup() const { return _amountToPickup; }
@@ -44,10 +44,10 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION()
-	void OnSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	virtual void OnSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 	UFUNCTION()
-	void OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	virtual void OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 private:
 	UPROPERTY(EditAnywhere, Category = "Pickup Base")

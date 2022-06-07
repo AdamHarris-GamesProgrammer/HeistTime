@@ -39,6 +39,12 @@
     <Filter Include="Source\HeistTime">
       <UniqueIdentifier>{4B97652E-A16D-385D-9246-50C90AF0E2A6}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\HeistTime\Bag_Pickup.cpp">
+      <Filter>Source\HeistTime</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HeistTime\Bag_Pickup.h">
+      <Filter>Source\HeistTime</Filter>
+    </ClInclude>
     <None Include="..\..\Source\HeistTime\HeistTime.Build.cs">
       <Filter>Source\HeistTime</Filter>
     </None>

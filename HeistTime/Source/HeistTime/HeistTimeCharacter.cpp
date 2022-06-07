@@ -73,6 +73,7 @@ void AHeistTimeCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &AHeistTimeCharacter::OnPrimaryAction);
 	PlayerInputComponent->BindAction("ReloadAction", IE_Pressed, this, &AHeistTimeCharacter::OnReloadAction);
 	PlayerInputComponent->BindAction("InteractAction", IE_Pressed, this, &AHeistTimeCharacter::OnInteractionAction);
+	PlayerInputComponent->BindAction("GAction", IE_Pressed, this, &AHeistTimeCharacter::OnGAction);
 
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AHeistTimeCharacter::CrouchHandle);
 
@@ -111,6 +112,13 @@ void AHeistTimeCharacter::OnReloadAction()
 void AHeistTimeCharacter::OnInteractionAction() {
 	if (_pNearbyPickup != nullptr) {
 		_pNearbyPickup->Pickup(this);
+	}
+}
+
+void AHeistTimeCharacter::OnGAction()
+{
+	if (_pCurrentBag != nullptr) {
+		_pCurrentBag->DropBag(this);
 	}
 }
 

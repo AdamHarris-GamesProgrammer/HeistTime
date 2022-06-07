@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "PickupBase.h"
+#include "Bag_Pickup.h"
 #include "HeistTimeCharacter.generated.h"
 
 class UInputComponent;
@@ -64,6 +65,14 @@ public:
 		return _pNearbyPickup;
 	}
 
+	void SetCurrentBag(ABag_Pickup* pickup) {
+		_pCurrentBag = pickup;
+	}
+
+
+	USkeletalMeshComponent* GetFirstPersonMesh() const {
+		return Mesh1P;
+	}
 
 protected:
 	
@@ -75,6 +84,8 @@ protected:
 
 	
 	void OnInteractionAction();
+
+	void OnGAction();
 
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
@@ -123,6 +134,8 @@ private:
 	TArray<class AWeapon*> _pWeapons;
 
 	APickupBase* _pNearbyPickup;
+
+	ABag_Pickup* _pCurrentBag = nullptr;
 
 	int _currentWeaponIndex = 0;
 };

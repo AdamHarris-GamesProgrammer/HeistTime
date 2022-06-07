@@ -12,12 +12,12 @@ APickupBase::APickupBase()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	_pMesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
-
-
 	_pSphere = CreateDefaultSubobject<USphereComponent>("Collider");
 	_pSphere->SetSphereRadius(32.0f, true);
 	RootComponent = _pSphere;
+
+	_pMesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
+	_pMesh->SetupAttachment(_pSphere);
 }
 
 // Called when the game starts or when spawned
