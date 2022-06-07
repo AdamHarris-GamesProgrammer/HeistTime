@@ -58,10 +58,14 @@ void AHeistTimeCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
+	
+
 	// Bind fire event
 	PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &AHeistTimeCharacter::OnPrimaryAction);
 	PlayerInputComponent->BindAction("ReloadAction", IE_Pressed, this, &AHeistTimeCharacter::OnReloadAction);
 	PlayerInputComponent->BindAction("InteractAction", IE_Pressed, this, &AHeistTimeCharacter::OnInteractionAction);
+
+	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AHeistTimeCharacter::CrouchHandle);
 
 	// Bind movement events
 	PlayerInputComponent->BindAxis("Move Forward / Backward", this, &AHeistTimeCharacter::MoveForward);
@@ -114,6 +118,16 @@ void AHeistTimeCharacter::MoveRight(float Value)
 	{
 		// add movement in that direction
 		AddMovementInput(GetActorRightVector(), Value);
+	}
+}
+
+void AHeistTimeCharacter::CrouchHandle()
+{
+	if (bIsCrouched) {
+		UnCrouch(true);
+	}
+	else {
+		Crouch(true);
 	}
 }
 

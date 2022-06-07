@@ -82,6 +82,8 @@ protected:
 	/** Handles strafing movement, left and right */
 	void MoveRight(float Val);
 
+	void CrouchHandle();
+
 	/**
 	 * Called via input to turn at a given rate.
 	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
