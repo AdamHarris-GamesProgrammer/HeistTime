@@ -35,6 +35,7 @@ static inline void FOnPickUpEvent_DelegateWrapper(const FMulticastScriptDelegate
  \
 	DECLARE_FUNCTION(execOnSphereEndOverlap); \
 	DECLARE_FUNCTION(execOnSphereBeginOverlap); \
+	DECLARE_FUNCTION(execGetPickupText); \
 	DECLARE_FUNCTION(execGetPickupName); \
 	DECLARE_FUNCTION(execGetAmountToPickup);
 
@@ -43,6 +44,7 @@ static inline void FOnPickUpEvent_DelegateWrapper(const FMulticastScriptDelegate
  \
 	DECLARE_FUNCTION(execOnSphereEndOverlap); \
 	DECLARE_FUNCTION(execOnSphereBeginOverlap); \
+	DECLARE_FUNCTION(execGetPickupText); \
 	DECLARE_FUNCTION(execGetPickupName); \
 	DECLARE_FUNCTION(execGetAmountToPickup);
 

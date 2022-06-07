@@ -30,6 +30,11 @@ public:
 		return _pickupName;
 	}
 
+	UFUNCTION(BlueprintCallable)
+	FString GetPickupText() {
+		return FString::FromInt(_amountToPickup) + "x " + _pickupName;
+	}
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
