@@ -53,7 +53,7 @@ void AWeapon::Tick(float DeltaTime)
 			if (pImpactEffect != nullptr) {
 				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), pImpactEffect, hitResult.Location, shotdirection.Rotation(), FVector::OneVector, true);
 
-				UE_LOG(LogTemp, Warning, TEXT("Hit something"));
+				//UE_LOG(LogTemp, Warning, TEXT("Hit something"));
 				//TODO: Damage
 			}
 
@@ -108,7 +108,7 @@ void AWeapon::PullTrigger() {
 	_pBullets.Add(b);
 
 	_bulletsInClip--;
-	UE_LOG(LogTemp, Warning, TEXT("Bullets Left: %i"), _bulletsInClip);
+	//UE_LOG(LogTemp, Warning, TEXT("Bullets Left: %i"), _bulletsInClip);
 
 	if (pMuzzleFlash != nullptr) {
 		UGameplayStatics::SpawnEmitterAttached(pMuzzleFlash, pMeshComponent, "MuzzleFlashSocket");
@@ -122,17 +122,21 @@ void AWeapon::PullTrigger() {
 void AWeapon::Reload()
 {
 	if (_currentAmmo == 0) return;
+	if (_bulletsInClip == _clipSize) return;
 
 	int remainder = _clipSize - _bulletsInClip;
 
 	if (remainder > _currentAmmo) {
 		remainder = _currentAmmo;
+		_bulletsInClip = _currentAmmo;
+	}
+	else {
+		_bulletsInClip = _clipSize;
 	}
 
-	_bulletsInClip = remainder;
 	_currentAmmo -= remainder;
 
-	UE_LOG(LogTemp, Warning, TEXT("Total Ammo Left: %i"), _currentAmmo);
+	//UE_LOG(LogTemp, Warning, TEXT("Total Ammo Left: %i"), _currentAmmo);
 }
 
 bool Bullet::Check(UWorld* world, FCollisionQueryParams* params, FHitResult result)

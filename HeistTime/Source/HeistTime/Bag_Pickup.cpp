@@ -30,8 +30,7 @@ void ABag_Pickup::DropBag(AHeistTimeCharacter* character)
 {
 	character->SetCurrentBag(nullptr);
 
-	UE_LOG(LogTemp, Warning, TEXT("DETACHING"));
-	//DetachFromComponent(FAttachmentTransformRules::KeepRelativeTransform);
+	//UE_LOG(LogTemp, Warning, TEXT("DETACHING"));
 	DetachFromActor(FDetachmentTransformRules::KeepRelativeTransform);
 
 	SetActorLocation(character->GetActorLocation());

@@ -67,8 +67,6 @@ void AHeistTimeCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
-	
-
 	// Bind fire event
 	PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &AHeistTimeCharacter::OnPrimaryAction);
 	PlayerInputComponent->BindAction("ReloadAction", IE_Pressed, this, &AHeistTimeCharacter::OnReloadAction);
