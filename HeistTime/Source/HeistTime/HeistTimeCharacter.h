@@ -65,13 +65,19 @@ public:
 		return _pNearbyPickup;
 	}
 
-	bool SetCurrentBag(ABag_Pickup* pickup) {
-		if (_pCurrentBag != nullptr) {
-			return false;
-		}
+	bool CanPickupBag() {
+		return !_carryingBag;
+	}
 
+	void SetCurrentBag(ABag_Pickup* pickup) {
 		_pCurrentBag = pickup;
-		return true;
+
+		if (pickup != nullptr) {
+			_carryingBag = true;
+		}
+		else {
+			_carryingBag = false;
+		}
 	}
 
 
@@ -143,5 +149,6 @@ private:
 	ABag_Pickup* _pCurrentBag = nullptr;
 
 	int _currentWeaponIndex = 0;
+	bool _carryingBag = false;
 };
 

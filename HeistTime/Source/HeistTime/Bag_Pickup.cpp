@@ -15,7 +15,8 @@ void ABag_Pickup::Pickup(AHeistTimeCharacter* character)
 {
 	Super::Pickup(character);
 
-	if (character->SetCurrentBag(this)) {
+	if (character->CanPickupBag()) {
+		character->SetCurrentBag(this);
 		AttachToActor(character->GetOwner(), FAttachmentTransformRules::KeepRelativeTransform);
 	}
 }
@@ -28,6 +29,7 @@ void ABag_Pickup::BeginPlay()
 void ABag_Pickup::DropBag(AHeistTimeCharacter* character)
 {
 	character->SetCurrentBag(nullptr);
+
 	UE_LOG(LogTemp, Warning, TEXT("DETACHING"));
 	//DetachFromComponent(FAttachmentTransformRules::KeepRelativeTransform);
 	DetachFromActor(FDetachmentTransformRules::KeepRelativeTransform);

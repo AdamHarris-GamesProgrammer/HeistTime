@@ -117,7 +117,7 @@ void AHeistTimeCharacter::OnInteractionAction() {
 
 void AHeistTimeCharacter::OnGAction()
 {
-	if (_pCurrentBag != nullptr) {
+	if (_carryingBag) {
 		_pCurrentBag->DropBag(this);
 	}
 }
