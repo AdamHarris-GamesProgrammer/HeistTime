@@ -148,10 +148,8 @@ bool Bullet::Check(UWorld* world, FCollisionQueryParams* params, FHitResult resu
 
 	currentDistance += rangeIncrement;
 
-
-	UE_LOG(LogTemp, Warning, TEXT("Start: %s End: %s"), *location.ToString(), *end.ToString());
-
-	DrawDebugLine(world, location, end, FColor::Green, true, 100.0f);
+	//UE_LOG(LogTemp, Warning, TEXT("Start: %s End: %s"), *location.ToString(), *end.ToString());
+	//DrawDebugLine(world, location, end, FColor::Green, true, 100.0f);
 
 	bool hit = world->LineTraceSingleByChannel(result, location, end, ECC_Visibility, *params);
 

@@ -81,6 +81,10 @@ public:
 	}
 
 
+	void SetExitPoint(class AExitPoint* ep) {
+		_pExitPoint = ep;
+	}
+
 	USkeletalMeshComponent* GetFirstPersonMesh() const {
 		return Mesh1P;
 	}
@@ -144,9 +148,9 @@ private:
 
 	TArray<class AWeapon*> _pWeapons;
 
-	APickupBase* _pNearbyPickup;
-
-	ABag_Pickup* _pCurrentBag = nullptr;
+	class APickupBase* _pNearbyPickup;
+	class ABag_Pickup* _pCurrentBag = nullptr;
+	class AExitPoint* _pExitPoint = nullptr;
 
 	int _currentWeaponIndex = 0;
 	bool _carryingBag = false;

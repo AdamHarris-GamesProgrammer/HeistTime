@@ -213,10 +213,6 @@ void EmptyLinkFunctionForGeneratedCodeExitPoint() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp__pBox_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp__pBox;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp__currentMoney_MetaData[];
-#endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp__currentMoney;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -251,16 +247,9 @@ void EmptyLinkFunctionForGeneratedCodeExitPoint() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AExitPoint_Statics::NewProp__pBox = { "_pBox", nullptr, (EPropertyFlags)0x0040000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AExitPoint, _pBox), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AExitPoint_Statics::NewProp__pBox_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AExitPoint_Statics::NewProp__pBox_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AExitPoint_Statics::NewProp__currentMoney_MetaData[] = {
-		{ "ModuleRelativePath", "ExitPoint.h" },
-	};
-#endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AExitPoint_Statics::NewProp__currentMoney = { "_currentMoney", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AExitPoint, _currentMoney), METADATA_PARAMS(Z_Construct_UClass_AExitPoint_Statics::NewProp__currentMoney_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AExitPoint_Statics::NewProp__currentMoney_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AExitPoint_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AExitPoint_Statics::NewProp__pMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AExitPoint_Statics::NewProp__pBox,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AExitPoint_Statics::NewProp__currentMoney,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AExitPoint_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AExitPoint>::IsAbstract,
@@ -298,9 +287,9 @@ void EmptyLinkFunctionForGeneratedCodeExitPoint() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_ExitPoint_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AExitPoint, AExitPoint::StaticClass, TEXT("AExitPoint"), &Z_Registration_Info_UClass_AExitPoint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AExitPoint), 1250396479U) },
+		{ Z_Construct_UClass_AExitPoint, AExitPoint::StaticClass, TEXT("AExitPoint"), &Z_Registration_Info_UClass_AExitPoint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AExitPoint), 222747358U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_ExitPoint_h_2816197204(TEXT("/Script/HeistTime"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_ExitPoint_h_4164570441(TEXT("/Script/HeistTime"),
 		Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_ExitPoint_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_ExitPoint_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

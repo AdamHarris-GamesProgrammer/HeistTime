@@ -6,6 +6,7 @@
 #include "Components/SphereComponent.h"
 #include "HeistTimeCharacter.h"
 #include "Bag_Pickup.h"
+#include "HeistTimeGameMode.h"
 
 // Sets default values
 AExitPoint::AExitPoint()
@@ -18,8 +19,6 @@ AExitPoint::AExitPoint()
 
 	_pMesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
 	_pMesh->SetupAttachment(_pBox);
-
-
 }
 
 // Called when the game starts or when spawned
@@ -43,13 +42,24 @@ void AExitPoint::OnSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, 
 {
 	AHeistTimeCharacter* pCharacter = Cast<AHeistTimeCharacter>(OtherActor);
 	if (pCharacter != nullptr) {
+		AHeistTimeGameMode* gm = Cast<AHeistTimeGameMode>(GetWorld()->GetAuthGameMode());
 
+		if (gm) {
+			if (gm->CanEscape()) {
+				pCharacter->SetExitPoint(this);
+			}
+		}
+		
 	}
 
 	ABag_Pickup* pBagPickup = Cast<ABag_Pickup>(OtherActor);
 	if (pBagPickup != nullptr) {
-		_currentMoney += pBagPickup->GetAmountToPickup();
-		UE_LOG(LogTemp, Warning, TEXT("Money: %i"), _currentMoney);
+		AHeistTimeGameMode* gm = Cast<AHeistTimeGameMode>(GetWorld()->GetAuthGameMode());
+		
+		if (gm) {
+			gm->AddCurrentMoney(pBagPickup->GetAmountToPickup());
+		}
+
 		pBagPickup->Destroy();
 	}
 }
@@ -58,7 +68,13 @@ void AExitPoint::OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AA
 {
 	AHeistTimeCharacter* pCharacter = Cast<AHeistTimeCharacter>(OtherActor);
 	if (pCharacter != nullptr) {
+		AHeistTimeGameMode* gm = Cast<AHeistTimeGameMode>(GetWorld()->GetAuthGameMode());
 
+		if (gm) {
+			if (gm->CanEscape()) {
+				pCharacter->SetExitPoint(this);
+			}
+		}
 	}
 }
 

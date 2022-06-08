@@ -111,6 +111,13 @@ void AHeistTimeCharacter::OnInteractionAction() {
 	if (_pNearbyPickup != nullptr) {
 		_pNearbyPickup->Pickup(this);
 	}
+
+	if (_pExitPoint != nullptr) {
+		AHeistTimeGameMode* gm = Cast<AHeistTimeGameMode>(GetWorld()->GetGameModeAuth());
+		if (gm) {
+			gm->GameOver(true);
+		}
+	}
 }
 
 void AHeistTimeCharacter::OnGAction()

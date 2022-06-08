@@ -14,8 +14,20 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define HEISTTIME_HeistTimeGameMode_generated_h
 
 #define FID_HeistTime_Source_HeistTime_HeistTimeGameMode_h_12_SPARSE_DATA
-#define FID_HeistTime_Source_HeistTime_HeistTimeGameMode_h_12_RPC_WRAPPERS
-#define FID_HeistTime_Source_HeistTime_HeistTimeGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_HeistTime_Source_HeistTime_HeistTimeGameMode_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execCanEscape); \
+	DECLARE_FUNCTION(execGetMoneyTarget); \
+	DECLARE_FUNCTION(execGetCurrentMoney);
+
+
+#define FID_HeistTime_Source_HeistTime_HeistTimeGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execCanEscape); \
+	DECLARE_FUNCTION(execGetMoneyTarget); \
+	DECLARE_FUNCTION(execGetCurrentMoney);
+
+
 #define FID_HeistTime_Source_HeistTime_HeistTimeGameMode_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAHeistTimeGameMode(); \

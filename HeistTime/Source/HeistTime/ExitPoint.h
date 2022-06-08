@@ -37,8 +37,4 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Exit Point")
 	class USphereComponent* _pBox = nullptr;
-
-
-	UPROPERTY()
-	int _currentMoney = 0;
 };
