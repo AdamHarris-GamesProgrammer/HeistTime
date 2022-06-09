@@ -80,6 +80,10 @@ public:
 		}
 	}
 
+	UFUNCTION(BlueprintCallable)
+	class AExitPoint* GetExitPoint() const {
+		return _pExitPoint;
+	}
 
 	void SetExitPoint(class AExitPoint* ep) {
 		_pExitPoint = ep;

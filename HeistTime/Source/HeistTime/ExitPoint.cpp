@@ -72,7 +72,7 @@ void AExitPoint::OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AA
 
 		if (gm) {
 			if (gm->CanEscape()) {
-				pCharacter->SetExitPoint(this);
+				pCharacter->SetExitPoint(nullptr);
 			}
 		}
 	}

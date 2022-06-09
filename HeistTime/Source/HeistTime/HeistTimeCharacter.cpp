@@ -7,6 +7,7 @@
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/InputSettings.h"
+#include "HeistTimeGameMode.h"
 #include "Weapon.h"
 
 
@@ -113,7 +114,7 @@ void AHeistTimeCharacter::OnInteractionAction() {
 	}
 
 	if (_pExitPoint != nullptr) {
-		AHeistTimeGameMode* gm = Cast<AHeistTimeGameMode>(GetWorld()->GetGameModeAuth());
+		AHeistTimeGameMode* gm = Cast<AHeistTimeGameMode>(GetWorld()->GetAuthGameMode());
 		if (gm) {
 			gm->GameOver(true);
 		}

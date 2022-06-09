@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AExitPoint;
 class APickupBase;
 class AWeapon;
 #ifdef HEISTTIME_HeistTimeCharacter_generated_h
@@ -25,12 +26,14 @@ static inline void FOnUseItem_DelegateWrapper(const FMulticastScriptDelegate& On
 #define FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_25_SPARSE_DATA
 #define FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_25_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetExitPoint); \
 	DECLARE_FUNCTION(execGetNearbyPickup); \
 	DECLARE_FUNCTION(execGetCurrentWeapon);
 
 
 #define FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetExitPoint); \
 	DECLARE_FUNCTION(execGetNearbyPickup); \
 	DECLARE_FUNCTION(execGetCurrentWeapon);
 

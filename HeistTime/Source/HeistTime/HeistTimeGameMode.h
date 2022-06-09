@@ -35,7 +35,7 @@ public:
 
 	void GameOver(bool won) {
 		if (won) {
-			UE_LOG("Game Won");
+			UE_LOG(LogTemp, Warning, TEXT("Game Won"));
 			//TODO: Trigger Logic for win screen
 		}
 		else {
