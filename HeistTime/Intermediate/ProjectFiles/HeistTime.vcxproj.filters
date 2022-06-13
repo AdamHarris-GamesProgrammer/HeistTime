@@ -96,6 +96,12 @@
     <ClInclude Include="..\..\Source\HeistTime\TP_WeaponComponent.h">
       <Filter>Source\HeistTime</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\HeistTime\VaultDoor.cpp">
+      <Filter>Source\HeistTime</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HeistTime\VaultDoor.h">
+      <Filter>Source\HeistTime</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\HeistTime\Weapon.cpp">
       <Filter>Source\HeistTime</Filter>
     </ClCompile>
