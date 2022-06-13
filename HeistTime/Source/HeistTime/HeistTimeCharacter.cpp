@@ -9,6 +9,8 @@
 #include "GameFramework/InputSettings.h"
 #include "HeistTimeGameMode.h"
 #include "Weapon.h"
+#include "Drill.h"
+#include "VaultDoor.h"
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -55,6 +57,16 @@ void AHeistTimeCharacter::BeginPlay()
 
 	_pCurrentWeapon = pPrimaryWeapon;
 	pSecondaryWeapon->SetActorHiddenInGame(true);
+}
+
+class AVaultDoor* AHeistTimeCharacter::GetVaultDoor() const
+{
+	return _pNearbyVaultDoor;
+}
+
+void AHeistTimeCharacter::SetVaultDoor(AVaultDoor* vaultDoor)
+{
+	_pNearbyVaultDoor = vaultDoor;
 }
 
 //////////////////////////////////////////////////////////////////////////// Input
@@ -118,6 +130,16 @@ void AHeistTimeCharacter::OnInteractionAction() {
 		if (gm) {
 			gm->GameOver(true);
 		}
+	}
+
+	if (_pNearbyVaultDoor != nullptr && !_pNearbyVaultDoor->IsBeingDrilled()) {
+		const FVector& location = GetActorLocation();
+		const FRotator& rotation = GetActorRotation();
+		ADrill* pDrill = GetWorld()->SpawnActor<ADrill>(_drillClass);
+		pDrill->SetActorLocation(location);
+		pDrill->SetActorRotation(rotation);
+		pDrill->SetConnectedVault(_pNearbyVaultDoor);
+		_pNearbyVaultDoor->SetIsBeingDrilled(true);
 	}
 }
 

@@ -35,7 +35,11 @@
             "e:\\ue\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
             "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\heisttimegamemode.generated.h",
             "e:\\ue\\projects\\heist\\heisttime\\heisttime\\source\\heisttime\\weapon.h",
-            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\weapon.generated.h"
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\weapon.generated.h",
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\source\\heisttime\\drill.h",
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\drill.generated.h",
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\source\\heisttime\\vaultdoor.h",
+            "e:\\ue\\projects\\heist\\heisttime\\heisttime\\intermediate\\build\\win64\\unrealeditor\\inc\\heisttime\\vaultdoor.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

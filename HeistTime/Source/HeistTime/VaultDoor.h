@@ -31,7 +31,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Vault Settings")
 	class UStaticMeshComponent* _pVaultHandle = nullptr;
 
-	
+	void OpenVault();
+
+	bool IsBeingDrilled() const { return _isBeingDrilled; }
+	void SetIsBeingDrilled(bool val) { _isBeingDrilled = val; }
 
 private:
 
@@ -50,4 +53,6 @@ private:
 	UFUNCTION()
 	virtual void OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
+
+	bool _isBeingDrilled = false;
 };

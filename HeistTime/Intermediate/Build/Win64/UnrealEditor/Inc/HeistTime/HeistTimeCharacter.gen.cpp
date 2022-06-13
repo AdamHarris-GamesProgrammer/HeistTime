@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeHeistTimeCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	HEISTTIME_API UClass* Z_Construct_UClass_ADrill_NoRegister();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_HeistTime_OnUseItem__DelegateSignature_Statics
 	{
@@ -212,6 +213,10 @@ void EmptyLinkFunctionForGeneratedCodeHeistTimeCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp__pCurrentWeapon_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp__pCurrentWeapon;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp__drillClass_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp__drillClass;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -291,6 +296,13 @@ void EmptyLinkFunctionForGeneratedCodeHeistTimeCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp__pCurrentWeapon = { "_pCurrentWeapon", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHeistTimeCharacter, _pCurrentWeapon), Z_Construct_UClass_AWeapon_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp__pCurrentWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp__pCurrentWeapon_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp__drillClass_MetaData[] = {
+		{ "Category", "Gameplay Settings" },
+		{ "ModuleRelativePath", "HeistTimeCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp__drillClass = { "_drillClass", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHeistTimeCharacter, _drillClass), Z_Construct_UClass_ADrill_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp__drillClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp__drillClass_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AHeistTimeCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp_Mesh1P,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp_FirstPersonCameraComponent,
@@ -299,6 +311,7 @@ void EmptyLinkFunctionForGeneratedCodeHeistTimeCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp__primaryWeaponClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp__secondaryWeaponClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp__pCurrentWeapon,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHeistTimeCharacter_Statics::NewProp__drillClass,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AHeistTimeCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AHeistTimeCharacter>::IsAbstract,
@@ -336,9 +349,9 @@ void EmptyLinkFunctionForGeneratedCodeHeistTimeCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AHeistTimeCharacter, AHeistTimeCharacter::StaticClass, TEXT("AHeistTimeCharacter"), &Z_Registration_Info_UClass_AHeistTimeCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHeistTimeCharacter), 2302490559U) },
+		{ Z_Construct_UClass_AHeistTimeCharacter, AHeistTimeCharacter::StaticClass, TEXT("AHeistTimeCharacter"), &Z_Registration_Info_UClass_AHeistTimeCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHeistTimeCharacter), 1686306054U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_3394828566(TEXT("/Script/HeistTime"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_4226752401(TEXT("/Script/HeistTime"),
 		Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HeistTime_Source_HeistTime_HeistTimeCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -53,7 +53,9 @@ public:
 	FOnUseItem OnUseItem;
 
 
+	class AVaultDoor* GetVaultDoor() const;
 
+	void SetVaultDoor(class AVaultDoor* vaultDoor);
 
 	void SetNearbyPickup(APickupBase* pickup) {
 		UE_LOG(LogTemp, Warning, TEXT("Item nearby or not nearby"));
@@ -148,13 +150,18 @@ private:
 	TSubclassOf<class AWeapon> _secondaryWeaponClass;
 	
 	UPROPERTY()
-	class AWeapon* _pCurrentWeapon;
+	class AWeapon* _pCurrentWeapon = nullptr;
+
+	UPROPERTY(EditAnywhere, Category = "Gameplay Settings")
+	TSubclassOf<class ADrill> _drillClass;
 
 	TArray<class AWeapon*> _pWeapons;
 
-	class APickupBase* _pNearbyPickup;
+	class APickupBase* _pNearbyPickup = nullptr;
 	class ABag_Pickup* _pCurrentBag = nullptr;
 	class AExitPoint* _pExitPoint = nullptr;
+
+	class AVaultDoor* _pNearbyVaultDoor = nullptr;
 
 	int _currentWeaponIndex = 0;
 	bool _carryingBag = false;
