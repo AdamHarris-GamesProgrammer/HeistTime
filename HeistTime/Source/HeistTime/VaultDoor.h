@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "VaultDoor.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnVaultOpen);
 UCLASS()
 class HEISTTIME_API AVaultDoor : public AActor
 {
@@ -25,14 +26,28 @@ public:
 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Vault Settings")
-		class UStaticMeshComponent* _pVaultDoor = nullptr;
+	class UStaticMeshComponent* _pVaultDoor = nullptr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Vault Settings")
-		class UStaticMeshComponent* _pVaultHandle = nullptr;
+	class UStaticMeshComponent* _pVaultHandle = nullptr;
+
+	
 
 private:
 
+	UPROPERTY(BlueprintAssignable, Category = "Interaction")
+	FOnVaultOpen _vaultOpen;
+
+	UPROPERTY(EditAnywhere, Category = "Vault Settings")
+	class UBoxComponent* _pBoxCollider = nullptr;
+
 	UPROPERTY(EditAnywhere, Category = "Vault Settings")
 	class UStaticMeshComponent* _pVaultWall = nullptr;
+
+	UFUNCTION()
+	virtual void OnSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	UFUNCTION()
+	virtual void OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 };

@@ -8,15 +8,35 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef HEISTTIME_VaultDoor_generated_h
 #error "VaultDoor.generated.h already included, missing '#pragma once' in VaultDoor.h"
 #endif
 #define HEISTTIME_VaultDoor_generated_h
 
-#define FID_HeistTime_Source_HeistTime_VaultDoor_h_12_SPARSE_DATA
-#define FID_HeistTime_Source_HeistTime_VaultDoor_h_12_RPC_WRAPPERS
-#define FID_HeistTime_Source_HeistTime_VaultDoor_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define FID_HeistTime_Source_HeistTime_VaultDoor_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_HeistTime_Source_HeistTime_VaultDoor_h_9_DELEGATE \
+static inline void FOnVaultOpen_DelegateWrapper(const FMulticastScriptDelegate& OnVaultOpen) \
+{ \
+	OnVaultOpen.ProcessMulticastDelegate<UObject>(NULL); \
+}
+
+
+#define FID_HeistTime_Source_HeistTime_VaultDoor_h_13_SPARSE_DATA
+#define FID_HeistTime_Source_HeistTime_VaultDoor_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnSphereEndOverlap); \
+	DECLARE_FUNCTION(execOnSphereBeginOverlap);
+
+
+#define FID_HeistTime_Source_HeistTime_VaultDoor_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnSphereEndOverlap); \
+	DECLARE_FUNCTION(execOnSphereBeginOverlap);
+
+
+#define FID_HeistTime_Source_HeistTime_VaultDoor_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAVaultDoor(); \
 	friend struct Z_Construct_UClass_AVaultDoor_Statics; \
@@ -25,7 +45,7 @@ public: \
 	DECLARE_SERIALIZER(AVaultDoor)
 
 
-#define FID_HeistTime_Source_HeistTime_VaultDoor_h_12_INCLASS \
+#define FID_HeistTime_Source_HeistTime_VaultDoor_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesAVaultDoor(); \
 	friend struct Z_Construct_UClass_AVaultDoor_Statics; \
@@ -34,7 +54,7 @@ public: \
 	DECLARE_SERIALIZER(AVaultDoor)
 
 
-#define FID_HeistTime_Source_HeistTime_VaultDoor_h_12_STANDARD_CONSTRUCTORS \
+#define FID_HeistTime_Source_HeistTime_VaultDoor_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AVaultDoor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AVaultDoor) \
@@ -47,7 +67,7 @@ private: \
 public:
 
 
-#define FID_HeistTime_Source_HeistTime_VaultDoor_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_HeistTime_Source_HeistTime_VaultDoor_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AVaultDoor(AVaultDoor&&); \
@@ -58,25 +78,25 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AVaultDoor)
 
 
-#define FID_HeistTime_Source_HeistTime_VaultDoor_h_9_PROLOG
-#define FID_HeistTime_Source_HeistTime_VaultDoor_h_12_GENERATED_BODY_LEGACY \
+#define FID_HeistTime_Source_HeistTime_VaultDoor_h_10_PROLOG
+#define FID_HeistTime_Source_HeistTime_VaultDoor_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_HeistTime_Source_HeistTime_VaultDoor_h_12_SPARSE_DATA \
-	FID_HeistTime_Source_HeistTime_VaultDoor_h_12_RPC_WRAPPERS \
-	FID_HeistTime_Source_HeistTime_VaultDoor_h_12_INCLASS \
-	FID_HeistTime_Source_HeistTime_VaultDoor_h_12_STANDARD_CONSTRUCTORS \
+	FID_HeistTime_Source_HeistTime_VaultDoor_h_13_SPARSE_DATA \
+	FID_HeistTime_Source_HeistTime_VaultDoor_h_13_RPC_WRAPPERS \
+	FID_HeistTime_Source_HeistTime_VaultDoor_h_13_INCLASS \
+	FID_HeistTime_Source_HeistTime_VaultDoor_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_HeistTime_Source_HeistTime_VaultDoor_h_12_GENERATED_BODY \
+#define FID_HeistTime_Source_HeistTime_VaultDoor_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_HeistTime_Source_HeistTime_VaultDoor_h_12_SPARSE_DATA \
-	FID_HeistTime_Source_HeistTime_VaultDoor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_HeistTime_Source_HeistTime_VaultDoor_h_12_INCLASS_NO_PURE_DECLS \
-	FID_HeistTime_Source_HeistTime_VaultDoor_h_12_ENHANCED_CONSTRUCTORS \
+	FID_HeistTime_Source_HeistTime_VaultDoor_h_13_SPARSE_DATA \
+	FID_HeistTime_Source_HeistTime_VaultDoor_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_HeistTime_Source_HeistTime_VaultDoor_h_13_INCLASS_NO_PURE_DECLS \
+	FID_HeistTime_Source_HeistTime_VaultDoor_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
